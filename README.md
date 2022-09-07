@@ -2,10 +2,10 @@
 ### Biology 2299 - Inquiries in Biological Sciences: 
 # The Neural Control of Real-World Behavior
 
-**Instructor: Jonathan Samir Matthis**
-**Location: Snell 125**
-**Section 10**
-**Mon, Weds 2:50-4:30**
+**Instructor: Jonathan Samir Matthis** 
+**Location: Snell 125** 
+**Section 10** 
+**Mon, Weds 2:50-4:30** 
 
 ## Schedule
 | **Week** | **Monday** |                       **Topic**                        |  **Wednesday**  |                                     **Topic**                                      |
@@ -47,6 +47,7 @@ Class discussions will include a through-line of recurring, intersectional analy
 - Locate a scientific paper from a citation, DOI, or PMID
 - Identify critical information about it
 - Rapidly extract the key findings and insights
+- Evaluate figures to understand how research draw conclusions from data
 - Differentiate between primary research articles and review articles
 - Enter the publication into a citation management software 
     - Software: [Zotero](https://www.zotero.org/)
