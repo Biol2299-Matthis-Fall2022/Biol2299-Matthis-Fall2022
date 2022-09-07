@@ -3,8 +3,11 @@
 # The Neural Control of Real-World Behavior
 
 **Instructor: Jonathan Samir Matthis** 
+
 **Location: Snell 125** 
+
 **Section 10** 
+
 **Mon, Weds 2:50-4:30** 
 
 ## Schedule
