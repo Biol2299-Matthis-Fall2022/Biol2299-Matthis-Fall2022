@@ -1,3 +1,4 @@
+[![hackmd-github-sync-badge](https://hackmd.io/GsMNof8IRm61DvvJTsCZgA/badge)](https://hackmd.io/GsMNof8IRm61DvvJTsCZgA)
 ### Biology 2299 - Inquiries in Biological Sciences: 
 # The Neural Control of Real-World Behavior
 
