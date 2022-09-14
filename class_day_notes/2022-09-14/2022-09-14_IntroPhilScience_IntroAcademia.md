@@ -1,5 +1,8 @@
 # 2022-09-14 Class
 
+[![hackmd-github-sync-badge](https://hackmd.io/ZIqQSjAGRVi95Jap4cIcwA/badge)](https://hackmd.io/ZIqQSjAGRVi95Jap4cIcwA)
+
+
 ## Intro to The Situation
 
 ### Skepticism and the Philosophy of Science
