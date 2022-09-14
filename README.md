@@ -8,7 +8,9 @@
 
 **Section 10** 
 
-**Mon, Weds 2:50-4:30** 
+**Class Time - Mon, Weds 2:50-4:30** 
+
+**Office Hours - By appointment (check back for calendly link, or just wait and chat after class!)
 
 ## Schedule
 | **Week** | **Monday** |                       **Topic**                        |  **Wednesday**  |                                     **Topic**                                      |
