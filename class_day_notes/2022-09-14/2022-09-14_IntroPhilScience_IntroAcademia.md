@@ -8,11 +8,45 @@
 ### Skepticism and the Philosophy of Science
 
 - Solipsism, the worst and only defensible philosophical position
-- Cogito Ergo Sum
+    - The belief that only I exist and everything else is not real (everyone else = npc)
+    - defensible, because only thing you can make assumptions (that others are also conscious)
+- Cogito Ergo Sum (1st level of knowledge)
+    - "I think, therefore I am"--> only known fact ever is that you are having a conscious experience (not a functional belief)
+    - Descartes
+    "Essentially Solipism"
+    -have to believe untrue things to get anywhere such as others also exist (2nd level of knowledge)
 - truth vs Truth
     - Rule#1 - Science is impossible
+        - we want to get to Truth, but will never know anything for sure, many scientific theories proven false over the years, any theories now may be proven wrong in the future
+        - we get "less wrong" over time
+            - ex: optic study by Ibn al-Haytham --> anatomically correct, but lack of explanation for bending of light in lens
+            - "fractional/gradients" of truth 
+        - no claim is possible without assumptions
+    - first assumption: others exist and have conscious experiences
+    - Truth - true facts of the universe and how everything works, "God eye view of the world"
+        - we can't access this -> only have approximations of truth --> essential gap between epistemology (ability to know things) and metaphysics (True facts)
+    - truth - approximations of the truth
+    - Knowledge is messy-->interpretations
+        - textbooks don't take this into consideration
 - Khunian paradigm shifts
+    -opposed incrementalist approach: the idea that things get better over time
+    - Thomas Khun - The Structure of Scientific Evolutions
+    - ex. with phlogiston, pre pre cursor to chemistry (now known as oxygen) 
+    - people tend to ignore holes of a study until a new one comes along, causing them to forget the older studies
+    - nonlinear progress, where we build "knowledge" from shaky foundations
 
+- Epistemology: the branch of philosophy concerned with knowledge, "what does it mean to know something?" "where does it come from?"
+- ability to know these things
+
+- Metaphysics: the true facts of the universe & what actually exists
+    - ex. where do all of your beliefs about yourself come from?
+-Descartes: Empirical fact- something you look at and are reliable bc of that
+
+2 scientific questions: "what am I" and "what is everything else in the world"
+- Descartes: "what can I know for sure? bc sensory intake can be wrong"--> we only know we perceive
+
+
+--> the actual true fact of an experience is always imperfect because time has passed since the recorded data (measurements are imperfect)
 ### The structure of Academia
 - The heirarchy
     - undergrad
