@@ -4,6 +4,8 @@
 
 **Instructor: Jonathan Samir Matthis** 
 
+**Email: j [dot] matthis [at] northeastern [dpt] edu**
+
 **Location: Snell 125** 
 
 **Section 10** 
