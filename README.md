@@ -13,22 +13,22 @@
 **Office Hours - By appointment (check back for calendly link, or just wait and chat after class!)**
 
 ## Schedule
-| **Week** | **Monday** |                       **Topic**                        |  **Wednesday**  |                                     **Topic**                                      |
-|:--------:|:----------:|:------------------------------------------------------:|:---------------:|:----------------------------------------------------------------------------------:|
-|  **1**   | 2022-09-05 |                **NO CLASS - LABOR DAY**                |   2022-09-07    |                    First day of class - Setup and Introductions                    |
-|  **2**   | 2022-09-12 |         Alissa Link - Library Research Session         |   2022-09-14    | Intro to The Situation: Philosophy of Science and the Structure of Modern Academia |
-|  **3**   | 2022-09-19 | SI Units and Center of Mass analysis of human movement |   2022-09-21    |                                    COM Analysis                                    |
-|  **4**   | 2022-09-26 |                Vision and eye tracking                 |   2022-09-28    |                               Eye tracking analysis                                |
-|  **5**   | 2022-10-03 |         Human Evolution and Blender Z-Anatomy          |   2022-10-05    |                                    **Exam #1**                                     |
-|  **6**   | 2022-10-10 |         **NO CLASS - Indigenous People's Day**         |   2022-10-12    |                Spinal level control and Central Pattern generators                 |
-|  **7**   | 2022-10-17 |                    TBD<sup>1</sup>                     |   2022-10-19    |                                  TBD<sup>1</sup>                                   |
-|  **8**   | 2022-10-24 |                    TBD<sup>1</sup>                     |   2022-10-26    |                                  TBD<sup>1</sup>                                   |
-|  **9**   | 2022-10-31 |                    TBD<sup>1</sup>                     |   2022-11-02    |                                **Exam#2 here-ish**                                 |
-|  **10**  | 2022-11-07 |                    TBD<sup>1</sup>                     |   2022-11-09    |                                  TBD<sup>1</sup>                                   |
-|  **11**  | 2022-11-14 |                    **POSTER DAY 1**                    |   2022-11-16    |                                  **POSTER DAY 2**                                  |
-|  **12**  | 2022-11-21 |                     Aaron Lecture?                     |   2022-11-23    |                              NO CLASS - THANKSGIVING                               |
-|  **13**  | 2022-11-28 |                    TBD<sup>1</sup>                     |   2022-11-30    |                                  TBD<sup>1</sup>                                   |
-|  **14**  | 2022-12-05 |                    TBD<sup>1</sup>                     |   2022-12-07    |                                    **Exam #3**                                     |
+| **Week** | **Monday** |                       **Topic**                        | **Wednesday** |                                                                             **Topic**                                                                             |
+|:--------:|:----------:|:------------------------------------------------------:|:-------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|  **1**   | 2022-09-05 |                **NO CLASS - LABOR DAY**                |  2022-09-07   |                                                           First day of class - Setup and Introductions                                                            |
+|  **2**   | 2022-09-12 |         Alissa Link - Library Research Session         |  2022-09-14   | [Intro to The Situation: Philosophy of Science ~~and the Structure of Modern Academia~~](class_day_notes/2022-09-14/2022-09-14_IntroPhilScience_IntroAcademia.md) |
+|  **3**   | 2022-09-19 | SI Units and Center of Mass analysis of human movement |  2022-09-21   |                                                                           COM Analysis                                                                            |
+|  **4**   | 2022-09-26 |                Vision and eye tracking                 |  2022-09-28   |                                                                       Eye tracking analysis                                                                       |
+|  **5**   | 2022-10-03 |         Human Evolution and Blender Z-Anatomy          |  2022-10-05   |                                                                            **Exam #1**                                                                            |
+|  **6**   | 2022-10-10 |         **NO CLASS - Indigenous People's Day**         |  2022-10-12   |                                                        Spinal level control and Central Pattern generators                                                        |
+|  **7**   | 2022-10-17 |                    TBD<sup>1</sup>                     |  2022-10-19   |                                                                          TBD<sup>1</sup>                                                                          |
+|  **8**   | 2022-10-24 |                    TBD<sup>1</sup>                     |  2022-10-26   |                                                                          TBD<sup>1</sup>                                                                          |
+|  **9**   | 2022-10-31 |                    TBD<sup>1</sup>                     |  2022-11-02   |                                                                        **Exam#2 here-ish**                                                                        |
+|  **10**  | 2022-11-07 |                    TBD<sup>1</sup>                     |  2022-11-09   |                                                                          TBD<sup>1</sup>                                                                          |
+|  **11**  | 2022-11-14 |                    **POSTER DAY 1**                    |  2022-11-16   |                                                                         **POSTER DAY 2**                                                                          |
+|  **12**  | 2022-11-21 |                     Aaron Lecture?                     |  2022-11-23   |                                                                      NO CLASS - THANKSGIVING                                                                      |
+|  **13**  | 2022-11-28 |                    TBD<sup>1</sup>                     |  2022-11-30   |                                                                          TBD<sup>1</sup>                                                                          |
+|  **14**  | 2022-12-05 |                    TBD<sup>1</sup>                     |  2022-12-07   |                                                                            **Exam #3**                                                                            |
 
 <sup>1</sup> TBD - We'll discuss the content of the later part of the course as a group after we've had a couple weeks to get to know each other 
 
