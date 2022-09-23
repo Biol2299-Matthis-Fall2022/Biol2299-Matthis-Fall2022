@@ -14,6 +14,8 @@
 
 **Office Hours - By appointment (check back for calendly link, or just wait and chat after class!)**
 
+**Is this a thing yet?** - https://biol2299-matthis-fall2022.github.io 
+
 ## Schedule
 | **Week** | **Monday** |                       **Topic**                        | **Wednesday** |                                                                             **Topic**                                                                             |
 |:--------:|:----------:|:------------------------------------------------------:|:-------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:|
