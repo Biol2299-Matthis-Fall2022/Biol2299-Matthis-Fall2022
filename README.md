@@ -2,19 +2,12 @@
 ### Biology 2299 - Inquiries in Biological Sciences: Section 10: 
 # The Neural Control of Real-World Behavior
 
-**Instructor: Jonathan Samir Matthis** 
-
-**Email: j [dot] matthis [at] northeastern [dpt] edu**
-
-**Location: Snell 125** 
-
-**Section 10** 
-
-**Class Time - Mon, Weds 2:50-4:30** 
-
-**Office Hours - By appointment (check back for calendly link, or just wait and chat after class!)**
-
-**Is this a thing yet?** - https://biol2299-matthis-fall2022.github.io 
+**Instructor:** Jonathan Samir Matthis  
+**Email:** j [dot] matthis [at] northeastern [dot] edu  
+**Location:** Snell 125    
+**Class Time:** Mon, Weds 2:50-4:30  
+**Office Hours:** By appointment (check back for calendly link, or just wait and chat after class!)  
+**Github Repo Link:** https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022
 
 ## Schedule
 | **Week** | **Monday** |                       **Topic**                        | **Wednesday** |                                                                             **Topic**                                                                             |
