@@ -1,4 +1,4 @@
-# 2202-09-07 
+ 2202-09-07 
 ## First Day of Class
 
 ### Introductions!
