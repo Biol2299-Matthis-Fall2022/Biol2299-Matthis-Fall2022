@@ -6,7 +6,9 @@
 **Email:** j [dot] matthis [at] northeastern [dot] edu  
 **Location:** Snell 125    
 **Class Time:** Mon, Weds 2:50-4:30  
-**Github Repo Link:** https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022
+**Github Repo Link:** https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022  
+**Zotero Group Library Link:** https://www.zotero.org/groups/4793329/fall2022_biol2299_neurorealworld
+
 
 ## Office Hours:
  - Book a Zoom meeting with me - https://calendly.com/jonmatthis/30min
