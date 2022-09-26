@@ -3,6 +3,3 @@ site_name: Fall 2022 - Matthis - Biol 2299 - Neural Control of Real-World Behavi
 theme:
   name: material
 
-nav:
-    - Home: index.md
-    - Class Day Notes: class_day_notes/2022-09-21.md
