@@ -16,7 +16,7 @@
 
 ## Schedule
 | **Week** | **Monday** |                         **Topic**                         | **Wednesday** |                                         **Topic**                                         |
-|:---:|:------:|:---------------------------------------------------------:|:----:|:-----------------------------------------------------------------------------------------:|
+|:---:|:------:|:--------------------------------------------------------:|:----:|:-----------------------------------------------------------------------------------------:|
 |  **1**   | 2022-09-05 |              **NO CLASS - LABOR DAY**      ✅              |  2022-09-07   |                      First day of class - Setup and Introductions  ✅                      |  
 |  **2**   | 2022-09-12 |        Alissa Link - Library Research Session    ✅        |  2022-09-14   | Intro to The Situation: Philosophy of Science ~~and the Structure of Modern Academia~~  ✅ |  
 |  **3**   | 2022-09-19 | SI Units and Center of Mass analysis of human movement  ✅ |  2022-09-21   |           ~~COM Analysis~~ Intro to Zotero and Structure of Scientific Papers ✅           |  
