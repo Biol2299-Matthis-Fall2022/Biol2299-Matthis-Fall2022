@@ -1,0 +1,7 @@
+mkdocs-material
+numpy
+matplotlib
+plotly
+pandas
+ipykernel
+jupyter
