@@ -5,4 +5,4 @@ theme:
 
 nav:
     - Home: index.md
-    - How to update these docs: how-to-update-these-docs.md
+    - Class Day Notes: class_day_notes/2022-09-21.md
