@@ -1,6 +1,6 @@
-# Template article summary 
+# In-text citation (e.g `Daley et al 2007`)
 
-## Citation (APA Format)
+## Bibliography  (APA Format)
 
 Author, First; Author, Second (2022) Journal of Something, 1-3 (4)
 

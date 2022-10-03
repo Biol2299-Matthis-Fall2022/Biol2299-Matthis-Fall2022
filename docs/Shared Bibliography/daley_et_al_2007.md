@@ -7,12 +7,12 @@
 
 ## Method figure
 
-![img.png](img.png)[copy paste the main methods figure, if there is one]
+![img.png](images/img.png)[copy paste the main methods figure, if there is one]
 
 ## Main Results figure
 
-![img_1.png](img_1.png)[copy the (or one of the) main results figure ]
-![img_2.png](img_2.png)
+![img_1.png](images/img_1.png)[copy the (or one of the) main results figure ]
+![img_2.png](images/img_2.png)
 
 ## Tags and Keywords 
 [what species was studied? What tools were used? What kind of data did they get? What was the main topic?]
