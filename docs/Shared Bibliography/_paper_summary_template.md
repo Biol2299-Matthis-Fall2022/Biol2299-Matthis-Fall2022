@@ -19,10 +19,10 @@ Some people did a study. This did it for this reason. Here's what they found.
 ## Tags and Keywords 
 [what species was studied? What tools were used? What kind of data did they get? What was the main topic?]
 
-#human
-#treadmill
-#kinematic
-#kinetic
-#muscles
-#spinal-cord
-#neurosceince
+#human   
+#treadmill  
+#kinematic  
+#kinetic  
+#muscles  
+#spinal-cord  
+#neurosceince  
