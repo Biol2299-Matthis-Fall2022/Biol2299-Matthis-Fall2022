@@ -1,7 +1,5 @@
 # How to clone and run a Github repository
 
-[![hackmd-github-sync-badge](https://hackmd.io/Uv9pkkvHThaNlylNjBNXlg/badge)](https://hackmd.io/Uv9pkkvHThaNlylNjBNXlg)
-
 ###### tags: diataxis, how-to, pycharm, github, documentation
 
 1. Install Pycharm 
@@ -14,7 +12,7 @@
     - Set: 
         - **URL:** The url of the repo
             -  e.g. https://github.com/freemocap/freemocap
-        - **Directory: ** The location on your computer where you want the *contents* of that repo to be cloned to
+        - **Directory:** The location on your computer where you want the *contents* of that repo to be cloned to
             - e.g. `C:\Users\jon\freemocap`
     - Click `Clone` button in bottom right
     - WAIT FOR IT TO COMPLETE IT'S STUFF BEFORE CLICKING AROUND
