@@ -5,3 +5,5 @@ plotly
 pandas
 ipykernel
 jupyter
+jupyter-book
+ghp-import
