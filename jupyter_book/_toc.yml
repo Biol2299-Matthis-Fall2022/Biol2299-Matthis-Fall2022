@@ -4,16 +4,26 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Auto-Generated Stuff
+  - caption: Biology 2299 Course Content
+    chapters:
+      - file: class_day_notes/read_me
+        sections:
+        - glob: class_day_notes/*
+
+      - file: how_to_guides/read_me
+        sections:
+        - glob: how_to_guides/*
+
+      - file: jupyter_ipython_notebooks/read_me
+        sections:
+        - glob: jupyter_ipython_notebooks/*
+
+  - caption: Auto-Generated jupyter-book stuff
     chapters:
       - file: markdown
         sections:
         - file: notebooks
         - file: markdown-notebooks
 
-  - caption: Class Day Notes!!
-    chapters:
-      - file: class_day_notes/read_me.md
-        sections:
-        - file: /class_day_notes/2022-09-07
+
 
