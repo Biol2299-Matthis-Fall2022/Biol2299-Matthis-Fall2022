@@ -23,7 +23,7 @@
 |  **4**   | 2022-09-26 |      Zotero Group - Building our shared bibliography ✅      |  2022-09-28   |            Center of Mass -  Data Collection ~~&  Analysis~~ (1 of ~~2~~ 3)  ✅            |   
 |  **5**   | 2022-10-03 | Center of Mass -   Analysis (2 of ~~2~~ 3) ~~& Lit Review~~ |  2022-10-05   |                   Center of Mass -   Analysis (3 of ~~2~~ 3) Lit Review                   |   
 |  **6**   | 2022-10-10 |            *NO CLASS - Indigenous People's Day*             |  2022-10-12   |               ~~**Exam #1**~~ Literature Review and rest-of-class planning                |   
-|  **7**   | 2022-10-17 |                         **Exam #1**                         |  2022-10-19   |                                            TBD                                            |  
+|  **7**   | 2022-10-17 |                         TBD                         |  2022-10-19   |                                            **Exam #1**                                            |  
 |  **8**   | 2022-10-24 |                             TBD                             |  2022-10-26   |                                       **Exam#2? **                                        |  
 |  **9**   | 2022-10-31 |                   -Poster Preparation: 1-                   |  2022-11-02   |                                  -Poster Preparation: 2-                                  |  
 |  **10**  | 2022-11-07 |                   -Poster Preparation: 3-                   |  2022-11-09   |                                  -Poster Preparation: 4-                                  |  
