@@ -1,7 +1,6 @@
-# In Text Citation 
-```
-In-text citation in APA format (e.g `Daley et al 2007`)
-```
+# _paper_summary_template
+
+# In Text Citation (in APA format)
 
 ## Citation  (APA Format)
 
@@ -33,7 +32,7 @@ copy paste the main methods figure, if there is one
 copy the (or one of the) main results figure
 ```
 
-## Tags and Keywords 
+## Tags,  Keywords, and important phrases
 ```
 what species was studied? What tools were used? What kind of data did they get? What was the main topic?
 (NOTE - formatting is `#tag` with **no space** between the `#` and the `tag`)
