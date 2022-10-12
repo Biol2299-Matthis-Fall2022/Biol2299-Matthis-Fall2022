@@ -7,3 +7,4 @@ ipykernel
 jupyter
 jupyter-book
 ghp-import
+seaborn
