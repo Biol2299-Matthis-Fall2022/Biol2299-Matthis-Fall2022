@@ -17,22 +17,26 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-import numpy as np
-import pandas as pd
-import matplotlib
-import matplotlib.pyplot as plt
-from pathlib import Path
-# matplotlib.use("qt5agg")
-%matplotlib inline
+# load the data in
+
+com_xyz = np.load(com_xyz_npy_path)
+skeleton_dataframe = pd.read_csv(skeleton_body_dots_csv_path)
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Cell [0;32mIn [1], line 1[0m
-[0;32m----> 1[0m [38;5;28;01mimport[39;00m [38;5;21;01mnumpy[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnp[39;00m
-[1;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
-[1;32m      3[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m
+[0;31mFileNotFoundError[0m                         Traceback (most recent call last)
+Cell [0;32mIn [5], line 3[0m
+[1;32m      1[0m [38;5;66;03m# load the data in[39;00m
+[0;32m----> 3[0m com_xyz [38;5;241m=[39m [43mnp[49m[38;5;241;43m.[39;49m[43mload[49m[43m([49m[43mcom_xyz_npy_path[49m[43m)[49m
+[1;32m      4[0m skeleton_dataframe [38;5;241m=[39m pd[38;5;241m.[39mread_csv(skeleton_body_dots_csv_path)
 
-[0;31mModuleNotFoundError[0m: No module named 'numpy'
-ModuleNotFoundError: No module named 'numpy'
+File [0;32m/opt/hostedtoolcache/Python/3.9.14/x64/lib/python3.9/site-packages/numpy/lib/npyio.py:390[0m, in [0;36mload[0;34m(file, mmap_mode, allow_pickle, fix_imports, encoding)[0m
+[1;32m    388[0m     own_fid [38;5;241m=[39m [38;5;28;01mFalse[39;00m
+[1;32m    389[0m [38;5;28;01melse[39;00m:
+[0;32m--> 390[0m     fid [38;5;241m=[39m stack[38;5;241m.[39menter_context([38;5;28;43mopen[39;49m[43m([49m[43mos_fspath[49m[43m([49m[43mfile[49m[43m)[49m[43m,[49m[43m [49m[38;5;124;43m"[39;49m[38;5;124;43mrb[39;49m[38;5;124;43m"[39;49m[43m)[49m)
+[1;32m    391[0m     own_fid [38;5;241m=[39m [38;5;28;01mTrue[39;00m
+[1;32m    393[0m [38;5;66;03m# Code to distinguish from NumPy binary files and pickles.[39;00m
+
+[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'C:\\Users\\jonma\\Dropbox\\Northeastern\\Courses\\Biol2299\\2022_09_Fall_Biol2299_Inquiries_NeuralControlOfRealWorldBehavior\\freemocap_bos_com_standing_data\\FreeMocap_Data/sesh_2022-09-28_15_45_39/DataArrays/totalBodyCOM_frame_XYZ.npy'
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\jonma\\Dropbox\\Northeastern\\Courses\\Biol2299\\2022_09_Fall_Biol2299_Inquiries_NeuralControlOfRealWorldBehavior\\freemocap_bos_com_standing_data\\FreeMocap_Data/sesh_2022-09-28_15_45_39/DataArrays/totalBodyCOM_frame_XYZ.npy'
 
