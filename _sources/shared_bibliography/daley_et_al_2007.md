@@ -22,7 +22,9 @@ Daley, M. A., Felix, G., & Biewener, A. A. (2007). Running stability is enhanced
  4. They suggest that proximal (hip, knee) and distal (ankle, TMP) joints respond to perturbations differently, which allows for more robust responses to unexpected pertrubations 
 
 ## Method figure
-`[copy paste the main methods figure, if there is one]`
+```
+copy paste the main methods figure, if there is one]
+```
 ![img.png](images/img.png)
 
 ## Main Results figure
@@ -35,10 +37,10 @@ Daley, M. A., Felix, G., & Biewener, A. A. (2007). Running stability is enhanced
 [what species was studied? What tools were used? What kind of data did they get? What was the main topic?]
 ```
 
-#guinea-fowl
-#force-plate
-#kinematic
-#kinetic
-#center-of-mass
-#biomechanics
+#guinea-fowl  
+#force-plate  
+#kinematic  
+#kinetic  
+#center-of-mass  
+#biomechanics  
 #

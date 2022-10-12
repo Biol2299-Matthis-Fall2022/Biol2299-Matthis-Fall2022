@@ -1,4 +1,7 @@
-# In-text citation in APA format (e.g `Daley et al 2007`)
+# Example Template
+```
+In-text citation in APA format (e.g `Daley et al 2007`)
+```
 
 ## Citation  (APA Format)
 
