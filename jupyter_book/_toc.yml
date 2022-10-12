@@ -17,6 +17,10 @@ parts:
       - file: jupyter_ipython_notebooks/read_me
         sections:
         - glob: jupyter_ipython_notebooks/*
+  - caption: Shared Bibliography
+    - file: shared_bibliography/_paper_summary_template
+      sections:
+        - shared_bibliography/*
 
   - caption: Auto-Generated jupyter-book stuff
     chapters:
