@@ -1,12 +1,18 @@
-# In-text citation (e.g `Daley et al 2007`)
+# In-text citation in APA format (e.g `Daley et al 2007`)
 
-## Bibliography  (APA Format)
+## Citation  (APA Format)
 
-Author, First; Author, Second (2022) Journal of Something, 1-3 (4)
+LastName, A., LastName, B. (YEAR). Article Title. Journal, Issue(Volume), page-numbers. DOI,
+
+
+## Citation  (Nature Format)
+
+1. LastName, A., LastName, B., Article Title. Journal, Volume, page-numbers (YEAR).
+
 
 ## 1-2 sentence summary (in your own words)
 
-Some people did a study. This did it for this reason. Here's what they found. 
+[Some people did a study. This did it for this reason. Here's what they found.] 
 
 ## Method figure
 
@@ -19,6 +25,7 @@ Some people did a study. This did it for this reason. Here's what they found.
 ## Tags and Keywords 
 [what species was studied? What tools were used? What kind of data did they get? What was the main topic?]
 
+(NOTE - formatting is `#tag` with **no space** between the `#` and the `tag`)
 #human   
 #treadmill  
 #kinematic  
