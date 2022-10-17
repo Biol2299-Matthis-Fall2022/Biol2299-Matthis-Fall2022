@@ -1,5 +1,8 @@
 # How to create a pull request from HackMD
 
+[![hackmd-github-sync-badge](https://hackmd.io/G1EJBa4_QGC1Lf5qA3UGkQ/badge)](https://hackmd.io/G1EJBa4_QGC1Lf5qA3UGkQ)
+
+
 This guide will outline the steps to: 
 - create a new note on `hackmd.io`
 - push that note to a new branch on class GitHub repository
@@ -25,21 +28,21 @@ This guide will outline the steps to:
 ###  Set the "Select Repo" to `Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022`
  - If you don't see this repo, click the "Authorize more repos" button and follow the prompts there
 
-###  Create a new "branch" on the GitHub repo to push your changes to
+### 7. Create a new "branch" on the GitHub repo to push your changes to
 - The `main` branch of the repo is "protected," which means you can't push changes directly to it
 - A "branch" is a place to stage changes so they can be reviewed by other people before being "merged" into `main`
 - The name of the branch isn't super important (it will be deleted upon merge), but you can call it:
   - `[your_first_name]/[2-3_word_description_of_the_changes]`
   - 
-### Select the path for the file you are pushing changes to
+### 8. Select the path for the file you are pushing changes to
  - If you are making a new file, you can create it by specifying the path and filename, e.g
    - `docs/Shared Bibliography/this_cool_paper_summary.md`
 
-###  Write a short description of the changes in the "Name"
+### 9. Write a short description of the changes in the "Name"
 
-### Push the "Push" button 
+### 10. Push the "Push" button 
 ("Push" as in "push these changes into the Github Repo")
 
-### That should be it!!
+### That should be it!! ✨
 
 Your changes should now exist on a new branch on the GitHub repository :D
