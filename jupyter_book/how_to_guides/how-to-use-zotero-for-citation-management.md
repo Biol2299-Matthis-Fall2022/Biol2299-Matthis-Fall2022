@@ -1,5 +1,9 @@
 # How to use Zotero
 
+[![hackmd-github-sync-badge](https://hackmd.io/2EmKci7yT5W_j88C1ycDpQ/badge)](https://hackmd.io/2EmKci7yT5W_j88C1ycDpQ)
+
+
+
 ## Several methods to add an article to a Zotero library
 `TO DO - Write stuff here [JSM]`
 
