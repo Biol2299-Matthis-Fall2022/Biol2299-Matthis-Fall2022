@@ -1,4 +1,3 @@
-test robin
 
 * Standing posture
 * human gait and posture
