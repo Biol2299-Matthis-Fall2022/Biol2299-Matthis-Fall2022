@@ -1,4 +1,6 @@
 [![hackmd-github-sync-badge](https://hackmd.io/GsMNof8IRm61DvvJTsCZgA/badge)](https://hackmd.io/GsMNof8IRm61DvvJTsCZgA) 
+[![Gitter](https://badges.gitter.im/Biol2299-Matthis-Fall2022-chat/community.svg)](https://gitter.im/Biol2299-Matthis-Fall2022-chat/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 ### Biology 2299 - Inquiries in Biological Sciences: Section 10: 
 # The Neural Control of Real-World Behavior
 
@@ -8,7 +10,7 @@
 **Class Time:** Mon, Weds 2:50-4:30  
 **Github Repo Link:** https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022  
 **Zotero Group Library Link:** https://www.zotero.org/groups/4793329/fall2022_biol2299_neurorealworld
-
+**Gitter Chat Room Link:** https://gitter.im/Biol2299-Matthis-Fall2022-chat/ (rendundant to the `chat with gitter` badge above)
 
 ## Office Hours:
  - Book a Zoom meeting with me - https://calendly.com/jonmatthis/30min
