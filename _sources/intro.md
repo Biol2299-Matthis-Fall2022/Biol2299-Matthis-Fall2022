@@ -10,7 +10,7 @@
 **Class Time:** Mon, Weds 2:50-4:30  
 **Github Repo Link:** https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022  
 **Zotero Group Library Link:** https://www.zotero.org/groups/4793329/fall2022_biol2299_neurorealworld
-**Gitter Chat Room Link:** https://gitter.im/Biol2299-Matthis-Fall2022-chat/ (rendundant to the `chat with gitter` badge above)
+**Gitter Chat Room Link:** https://gitter.im/Biol2299-Matthis-Fall2022-chat/community (rendundant to the `chat with gitter` badge above)
 
 ## Office Hours:
  - Book a Zoom meeting with me - https://calendly.com/jonmatthis/30min
@@ -78,11 +78,10 @@ Class discussions will include a through-line of recurring, intersectional analy
 
 ## Grading
 
-Your grade from this class will be out of 100 points:
-- Exam #1 - 25pts
-- Exam #2 - 25pts
-- Exam #3 - 25pts
-- Poster Presentation - 25pts
+Your grade from this class will be out of 400 points:
+- Exam #1 - 100pts
+- Exam #2 - 100pts
+- Poster Presentation - 200pts
 
 In addition, **extra credit points will be awarded liberally for in and out of class participation.**
 
