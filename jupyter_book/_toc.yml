@@ -10,6 +10,10 @@ parts:
         sections:
         - glob: class_day_notes/*
 
+      - file: shared_bibliography/read_me
+        sections:
+        - glob: shared_bibliography/*
+
       - file: how_to_guides/read_me
         sections:
         - glob: how_to_guides/*
@@ -18,9 +22,9 @@ parts:
         sections:
         - glob: jupyter_ipython_notebooks/*
 
-      - file: shared_bibliography/read_me
+      - file: email_copies/read_me
         sections:
-        - glob: shared_bibliography/*
+        - glob: email_copies/*
 
 
   - caption: Auto-Generated jupyter-book stuff
