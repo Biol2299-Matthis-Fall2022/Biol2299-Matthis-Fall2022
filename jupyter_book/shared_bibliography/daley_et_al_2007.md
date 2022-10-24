@@ -25,12 +25,12 @@ Daley, M. A., Felix, G., & Biewener, A. A. (2007). Running stability is enhanced
 ```
 copy paste the main methods figure, if there is one]
 ```
-![img.png](images/img.png)
+![img.png](../images/img.png)
 
 ## Main Results figure
 `[copy the (or one of the) main results figure ]`
-![img_1.png](images/img_1.png)
-![img_2.png](images/img_2.png)
+![img_1.png](../images/img_1.png)
+![img_2.png](../images/img_2.png)
 
 ## Tags and Keywords 
 ```

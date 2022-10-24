@@ -10,6 +10,10 @@ parts:
         sections:
         - glob: class_day_notes/*
 
+      - file: poster_preparation/read_me
+        sections:
+        - glob: poster_preparation/*
+
       - file: shared_bibliography/read_me
         sections:
         - glob: shared_bibliography/*
