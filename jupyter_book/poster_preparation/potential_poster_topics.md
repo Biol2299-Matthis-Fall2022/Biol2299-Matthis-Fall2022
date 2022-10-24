@@ -18,19 +18,19 @@ ___
 ## 01 - The Neural Control of Standing Posture
 
 A general overview of the neural control of standing posture, with a focus on the role of:
-- The central nervous system
-    -Cortex
-    -Cerebellum
-    -Brainstem
-    -Spinal cord
-- The peripheral nervous system
-    -Sensory modalities
-    -Sensory systems
-        - Vision
-        - Vestibular
-        - Proprioception
-        - Somatosensation (touch)
-    -Motor pathways
+- The central nervous system  
+    -Cortex  
+    -Cerebellum  
+    -Brainstem  
+    -Spinal cord  
+- The peripheral nervous system  
+    -Sensory modalities  
+    -Sensory systems  
+        - Vision  
+        - Vestibular  
+        - Proprioception  
+        - Somatosensation (touch)  
+    -Motor pathways  
 - The musculoskeletal system
     -Muscle
     -Joint
