@@ -20,11 +20,11 @@
 | **Week** | **Monday** |                          **Topic**                           | **Wednesday** |                                         **Topic**                                         |
 |:---:|:------:|:------------------------------------------------------------:|:----:|:-----------------------------------------------------------------------------------------:|
 |  **1**   | 2022-09-05 |               **NO CLASS - LABOR DAY**      ✅                |  2022-09-07   |                      First day of class - Setup and Introductions  ✅                      |  
-|  **2**   | 2022-09-12 |         Alissa Link - Library Research Session    ✅          |  2022-09-14   | Intro to The Situation: Philosophy of Science ~~and the Structure of Modern Academia~~  ✅ |  
-|  **3**   | 2022-09-19 |  SI Units and Center of Mass analysis of human movement  ✅   |  2022-09-21   |           ~~COM Analysis~~ Intro to Zotero and Structure of Scientific Papers ✅           |  
-|  **4**   | 2022-09-26 |      Zotero Group - Building our shared bibliography ✅       |  2022-09-28   |            Center of Mass -  Data Collection ~~&  Analysis~~ (1 of ~~2~~ 3)  ✅            |   
-|  **5**   | 2022-10-03 | Center of Mass -   Analysis (2 of ~~2~~ 3) ~~& Lit Review~~✅ |  2022-10-05   |                  Center of Mass -   Analysis (3 of ~~2~~ 3) Lit Review ✅                  |   
-|  **6**   | 2022-10-10 |             *NO CLASS - Indigenous People's Day*             |  2022-10-12   |            ~~**Exam #1**~~ Literature Review and rest-of-class planning     ✅             |   
+|  **2**   | 2022-09-12 |         Alissa Link - Library Research Session    ✅          |  2022-09-14   | Intro to The Situation: Philosophy of Science   ✅ |  
+|  **3**   | 2022-09-19 |  SI Units and Center of Mass analysis of human movement  ✅   |  2022-09-21   |            Intro to Zotero and Structure of Scientific Papers ✅           |  
+|  **4**   | 2022-09-26 |     Zotero Group - Building our shared bibliography ✅       |  2022-09-28   |            Center of Mass -  Data Collection (1 of  3)  ✅            |   
+|  **5**   | 2022-10-03 | Center of Mass -   Analysis (2 of 3) ✅ |  2022-10-05   |                  Center of Mass -   Analysis (3 of  3) Lit Review ✅                  |   
+|  **6**   | 2022-10-10 |             *NO CLASS - Indigenous People's Day*             |  2022-10-12   |             Literature Review and rest-of-class planning     ✅             |   
 |  **7**   | 2022-10-17 |                          TBD      ✅                          |  2022-10-19   |                                      **Exam #1**   ✅                                      |  
 |  **8**   | 2022-10-24 |               -Poster Prep - Project Planning-               |  2022-10-26   |                                   -Poster Preparation-                                    |  
 |  **9**   | 2022-10-31 |                     -Poster Preparation-                     |  2022-11-02   |                                   -Poster Preparation-                                    |  
@@ -85,4 +85,4 @@ Your grade from this class will be out of 400 points:
 
 In addition, **extra credit points will be awarded liberally for in and out of class participation.**
 
-These points can be applied to Exams at your discretion. **Normal participation will be enough to allow you to skip Exam#3** 
+These points can be applied to Exams at your discretion. **Normal participation will be enough to allow you to skip Exam#2** 
