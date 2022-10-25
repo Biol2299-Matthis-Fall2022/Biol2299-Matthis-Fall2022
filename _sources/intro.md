@@ -32,7 +32,7 @@
 |  **11**  | 2022-11-14 |                       **POSTER DAY 1**                       |  2022-11-16   |                                     **POSTER DAY 2**                                      |  
 |  **12**  | 2022-11-21 |                        Aaron Lecture?                        |  2022-11-23   |                                  NO CLASS - THANKSGIVING                                  |  
 |  **13**  | 2022-11-28 |            Human Evolution and Blender Z-Anatomy             |  2022-11-30   |                    Central Pattern generators and cures for paralysis                     |  
-|  **14**  | 2022-12-05 |                    Dragonfly Neuroscience                    |  2022-12-07   |                                       Class Wrap-Up                                       |  
+|  **14**  | 2022-12-05 |                    Dragonfly Neuroscience                    |  2022-12-07   |                                       Class Wrap-Up                                        |  
 
 
 
