@@ -1,7 +1,7 @@
 # How to run a Jupyter/iPython notebook (`.ipynb`) with VS Code
 
 ## 1. [Download VS Code](https://code.visualstudio.com/)
-:::info
+:::{info}
 I've recommended PyCharm before, but I've recently realized/come to the conclusion that VS Code is a better option for handling `ipynb` files (aka `Jupyter Notebooks`). 
 :::
 
