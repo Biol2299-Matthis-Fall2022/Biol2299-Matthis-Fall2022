@@ -76,7 +76,7 @@ For me, it looks like:
 ```bash
 C:\Users\jonma\OneDrive\Desktop\Biol2299-Matthis-Fall2022\jupyter_book\jupyter_ipython_notebooks\freemocap_center_of_mass_analysis.ipynb
 ```
-```
+
 
 ```{admonition} Success?!
 If all went well, your VS Code window will look roughly similar to the equivalent page on the lab website: 
