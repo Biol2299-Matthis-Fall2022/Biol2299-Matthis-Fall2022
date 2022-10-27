@@ -11,7 +11,7 @@
 Do **EITHER** Method 1 **OR** Method 2 (doing both is redundant)
 ```
 
-### **Method 1 (Beginner/Easy mode)** - Download the repository from the web page   
+#### **Method 1 (Beginner/Easy mode)** - Download the repository from the web page   
 ```{note} 
 
 This method involves manually downloading the class repository from the GitHub website. 
@@ -25,7 +25,7 @@ Its simple and straightforward, and the **recommended** option for folks who wan
 - Unzip it somewhere on your computer   
 - PROCEED TO STEP 3   
         
-### **Method 2 (Advanced/Cool kid hacker mode)** - Clone the repo to your PC with `git`   
+#### **Method 2 (Advanced/Cool kid hacker mode)** - Clone the repo to your PC with `git`   
 ```{note} 
 This method involves cloning the repository from the command line using `git`.
 
