@@ -556,12 +556,14 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#open-the-repository-folder-in-vs-code">
-   3. Open the repository
-   <strong>
-    folder
-   </strong>
-   in VS Code
+  <a class="reference internal nav-link" href="#open-the-ipynb-file-in-vs-code">
+   3. Open the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ipynb
+    </span>
+   </code>
+   file  in VS Code
   </a>
  </li>
 </ul>
@@ -620,12 +622,14 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#open-the-repository-folder-in-vs-code">
-   3. Open the repository
-   <strong>
-    folder
-   </strong>
-   in VS Code
+  <a class="reference internal nav-link" href="#open-the-ipynb-file-in-vs-code">
+   3. Open the
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ipynb
+    </span>
+   </code>
+   file  in VS Code
   </a>
  </li>
 </ul>
@@ -642,10 +646,6 @@ title="Print to PDF"
 <h1>How to run a Jupyter/iPython notebook (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) with VS Code<a class="headerlink" href="#how-to-run-a-jupyter-ipython-notebook-ipynb-with-vs-code" title="Permalink to this headline">#</a></h1>
 <section id="step-1-download-vs-code">
 <h2>Step 1. <a class="reference external" href="https://code.visualstudio.com/">Download VS Code</a><a class="headerlink" href="#step-1-download-vs-code" title="Permalink to this headline">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><em>Note - I’ve recommended PyCharm before but I’ve recently realized/come to the conclusion that VS Code is a better option for handling <code class="docutils literal notranslate"><span class="pre">ipynb</span></code> files (aka <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Notebooks</span></code>). I do still think that  PyCharm is a better tool for full-on python-based programming though. It’s all about using the right tool for the job ✨</em></p>
-</div>
 </section>
 <section id="step-2-get-the-code-on-your-computer-somehow">
 <h2>Step 2. <strong>Get the code on your computer somehow</strong><a class="headerlink" href="#step-2-get-the-code-on-your-computer-somehow" title="Permalink to this headline">#</a></h2>
@@ -655,11 +655,6 @@ title="Print to PDF"
 </div>
 <section id="method-1-beginner-easy-mode">
 <h3><strong>Method 1 (Beginner/Easy mode)</strong><a class="headerlink" href="#method-1-beginner-easy-mode" title="Permalink to this headline">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This method involves manually downloading the class repository from the GitHub website.</p>
-<p>Its simple and straightforward, and the <strong>recommended</strong> option for folks who want to get things up and running as quickly as possible.</p>
-</div>
 <ul class="simple">
 <li><p>Download the repository from the web page
 - go to : <a class="reference external" href="https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022">https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022</a>
@@ -671,10 +666,10 @@ title="Print to PDF"
 </section>
 <section id="method-2-advanced-cool-kid-hacker-mode">
 <h3><strong>Method 2 (Advanced/Cool kid hacker mode)</strong><a class="headerlink" href="#method-2-advanced-cool-kid-hacker-mode" title="Permalink to this headline">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This method involves cloning the repository from the command line using <code class="docutils literal notranslate"><span class="pre">git</span></code>.</p>
-<p>It’s rather more advanced, but it will provide XP in the powerful magicks of <code class="docutils literal notranslate"><span class="pre">git</span></code> and ‘command line’/’terminal’ usage - which are important skills to master if you want to be a fancy pants comp sci hacker type 👽</p>
+<div class="highlight-{admonitin}Advanced/Cool notranslate"><div class="highlight"><pre><span></span>This method involves cloning the repository from the command line using `git`.
+
+It&#39;s rather more advanced, but it will provide XP in the powerful magicks of `git` and &#39;command line&#39;/&#39;terminal&#39; usage - which are important skills to master if you want to be a fancy pants comp sci hacker type 👽
+</pre></div>
 </div>
 <ul class="simple">
 <li><p>Clone the repository via Git and the command line</p></li>
@@ -716,21 +711,50 @@ title="Print to PDF"
 </section>
 </section>
 </section>
-<section id="open-the-repository-folder-in-vs-code">
-<h2>3. Open the repository <strong>folder</strong> in VS Code<a class="headerlink" href="#open-the-repository-folder-in-vs-code" title="Permalink to this headline">#</a></h2>
+<section id="open-the-ipynb-file-in-vs-code">
+<h2>3. Open the <code class="docutils literal notranslate"><span class="pre">ipynb</span></code> file  in VS Code<a class="headerlink" href="#open-the-ipynb-file-in-vs-code" title="Permalink to this headline">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>With most code based project, we want to open the <em>entire folder</em> in the software IDE (e.g. VS Code or PyCharm) rather than openning a single file (i.e. a <code class="docutils literal notranslate"><span class="pre">.py</span></code> or <code class="docutils literal notranslate"><span class="pre">'.ipynb'</span></code> )</p>
+<p>Usually, we would want to open the <em>entire folder</em> in the software IDE (e.g. VS Code or PyCharm) rather than openning a single <code class="docutils literal notranslate"><span class="pre">ipynb</span></code>file.</p>
+<p>…but this option is similar and I’m tired of writing this <code class="docutils literal notranslate"><span class="pre">how</span> <span class="pre">to</span></code> guide lol</p>
 </div>
 <p>In VS Code, in the top bar (aka the <code class="docutils literal notranslate"><span class="pre">Menu</span> <span class="pre">bar</span></code>)</p>
 <ul class="simple">
-<li><p>File &gt; ‘Open Folder’</p>
+<li><p>File &gt; ‘Open File’</p>
 <ul>
-<li><p>Select the repository folder you downloaded/cloned in <a class="reference external" href="#2-Get-the-code-on-your-computer-somehow">Step 2</a></p></li>
-<li><p>it will be called <code class="docutils literal notranslate"><span class="pre">Biol2299-Matthis-Fall2022</span></code></p></li>
+<li><p>Select/Open the <code class="docutils literal notranslate"><span class="pre">freemocap_center_of_mass_analysis.ipynb</span></code> file in the folder you downloaded/cloned in <a class="reference external" href="#2-Get-the-code-on-your-computer-somehow">Step 2</a></p></li>
 </ul>
 </li>
 </ul>
+<div class="highlight-info notranslate"><div class="highlight"><pre><span></span>The path to t will be called something like:
+```bash     
+[path_to_the_location_of_the_repo]/Biol2299-Matthis-Fall2022\jupyter_book/jupyter_ipython_notebooks/freemocap_center_of_mass_analysis.ipynb
+```     
+
+where `path_to_the_location_of_the_repo` is, like, the path to the location of the repository on your computer. 
+
+For me, it looks like:
+
+```bash
+C:\Users\jonma\OneDrive\Desktop\Biol2299-Matthis-Fall2022\jupyter_book\jupyter_ipython_notebooks\freemocap_center_of_mass_analysis.ipynb
+```
+
+```{admonition} Success?!
+If all went well, your VS Code window will look roughly similar to the equivalent page on the lab website: 
+
+https://biol2299-matthis-fall2022.github.io/Biol2299-Matthis-Fall2022/jupyter_ipython_notebooks/freemocap_center_of_mass_analysis.html
+```
+
+### 4. Click on the `Run All` button in the top bar
+- Just select defaults and/or say &#39;Yes&#39; to any prompts that pop up
+
+
+### Did it work? 
+
+Probably not, honestly lol. I probably need to add some extra steps to make this how-to actually viable 😅
+
+</pre></div>
+</div>
 </section>
 </section>
 
