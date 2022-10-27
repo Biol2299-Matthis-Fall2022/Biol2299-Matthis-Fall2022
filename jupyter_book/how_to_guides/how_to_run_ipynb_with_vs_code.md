@@ -47,11 +47,9 @@ It's rather more advanced, but it will provide XP in the powerful magicks of `gi
 git clone  https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022
 ```
 
+-  Wow you did it probably! [so cool 😎](https://cdn.costumewall.com/wp-content/uploads/2017/08/hackerman.jpg)
 
-#### Wow you did it probably!
-[so cool 😎](https://cdn.costumewall.com/wp-content/uploads/2017/08/hackerman.jpg)
-
-
+- PROCEED TO STEP 3
 
 
 ## 3. Open the `ipynb` file  in VS Code
