@@ -1,7 +1,8 @@
 # How to run a Jupyter/iPython notebook (`.ipynb`) with VS Code
 
 ## Step 1. [Download VS Code](https://code.visualstudio.com/)
-```{note}
+```{admonition} 
+:tags: ["margin"]
 *Note - I've recommended PyCharm before but I've recently realized/come to the conclusion that VS Code is a better option for handling `ipynb` files (aka `Jupyter Notebooks`). I do still think that  PyCharm is a better tool for full-on python-based programming though. It's all about using the right tool for the job ✨*
 ```
 ## Step 2. **Get the code on your computer somehow**
@@ -11,7 +12,8 @@ Do **EITHER** Method 1 **OR** Method 2 (doing both is redundant)
 ```
 
 ### **Method 1 (Beginner/Easy mode)**
-```{note}
+```{admonition} Beginner/Easy mode
+:tags: ["margin"]
 This method involves manually downloading the class repository from the GitHub website. 
 
 Its simple and straightforward, and the **recommended** option for folks who want to get things up and running as quickly as possible.
@@ -24,7 +26,7 @@ Its simple and straightforward, and the **recommended** option for folks who wan
         - PROCEED TO STEP 3
         
 ### **Method 2 (Advanced/Cool kid hacker mode)**   
-```{note}
+```{admonitin}Advanced/Cool kid hacker mode
 This method involves cloning the repository from the command line using `git`.
 
 It's rather more advanced, but it will provide XP in the powerful magicks of `git` and 'command line'/'terminal' usage - which are important skills to master if you want to be a fancy pants comp sci hacker type 👽
@@ -51,15 +53,42 @@ git clone  https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall202
 
 
 
-## 3. Open the repository **folder** in VS Code
+
+## 3. Open the `ipynb` file  in VS Code
 ```{note}
-With most code based project, we want to open the *entire folder* in the software IDE (e.g. VS Code or PyCharm) rather than openning a single file (i.e. a `.py` or `'.ipynb'` )
+Usually, we would want to open the *entire folder* in the software IDE (e.g. VS Code or PyCharm) rather than openning a single `ipynb`file. 
+
+...but this option is similar and I'm tired of writing this `how to` guide lol
 ```
 
 In VS Code, in the top bar (aka the `Menu bar`)
-- File > 'Open Folder'
-    - Select the repository folder you downloaded/cloned in [Step 2](#2-Get-the-code-on-your-computer-somehow)
-    - it will be called `Biol2299-Matthis-Fall2022`
+- File > 'Open File'
+    - Select/Open the `freemocap_center_of_mass_analysis.ipynb` file in the folder you downloaded/cloned in [Step 2](#2-Get-the-code-on-your-computer-somehow)
+:::info
+The path to t will be called something like:
+```bash     
+[path_to_the_location_of_the_repo]/Biol2299-Matthis-Fall2022\jupyter_book/jupyter_ipython_notebooks/freemocap_center_of_mass_analysis.ipynb
+```     
 
-                    
-                    
+where `path_to_the_location_of_the_repo` is, like, the path to the location of the repository on your computer. 
+
+For me, it looks like:
+
+```bash
+C:\Users\jonma\OneDrive\Desktop\Biol2299-Matthis-Fall2022\jupyter_book\jupyter_ipython_notebooks\freemocap_center_of_mass_analysis.ipynb
+```
+
+```{admonition} Success?!
+If all went well, your VS Code window will look roughly similar to the equivalent page on the lab website: 
+
+https://biol2299-matthis-fall2022.github.io/Biol2299-Matthis-Fall2022/jupyter_ipython_notebooks/freemocap_center_of_mass_analysis.html
+```
+
+### 4. Click on the `Run All` button in the top bar
+- Just select defaults and/or say 'Yes' to any prompts that pop up
+
+
+### Did it work? 
+
+Probably not, honestly lol. I probably need to add some extra steps to make this how-to actually viable 😅
+
