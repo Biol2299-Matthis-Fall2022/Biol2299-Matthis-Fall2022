@@ -90,5 +90,5 @@ https://biol2299-matthis-fall2022.github.io/Biol2299-Matthis-Fall2022/jupyter_ip
 
 ### Did it work? 
 
-Probably not, honestly lol. I probably need to add some extra steps to make this how-to actually viable 😅
+Probably not, honestly lol. I feel like I'm probably missing some stpes here, so it'll take some work to make this how-to actually viable. We'll get there  😅
 
