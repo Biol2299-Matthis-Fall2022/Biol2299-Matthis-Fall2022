@@ -133,3 +133,7 @@ dmypy.json
 .obsidian
 
 _build/
+
+.DS_Store
+
+.ipynb_checkpoints

@@ -1,7 +1,8 @@
 # How to run a Jupyter/iPython notebook (`.ipynb`) with VS Code
 
 ## 1. [Download VS Code](https://code.visualstudio.com/)
-:::{info}
+:::{note}   
+:tags: ["full-width"]   
 I've recommended PyCharm before, but I've recently realized/come to the conclusion that VS Code is a better option for handling `ipynb` files (aka `Jupyter Notebooks`). 
 :::
 
@@ -14,8 +15,9 @@ I've recommended PyCharm before, but I've recently realized/come to the conclusi
         - Select `Download ZIP`
         - Unzip it somewhere on your computer
         - PROCEED TO STEP 3
-        - 
-:::spoiler **Method 2 (Cool kid hacker mode)**
+        
+:::{admonition} **Method 2 (Cool kid hacker mode)**   
+:tags: ["margin"]   
 - Clone the repository via Git and the command line 
 - Open your favorite command line interface (CLI)
     - Mac/Linux - 
@@ -31,10 +33,11 @@ I've recommended PyCharm before, but I've recently realized/come to the conclusi
 git clone  https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022
 ```
 
-:::success 
-:::spoiler Wow you did it probably!
-[so cool :sunglasses:](https://cdn.costumewall.com/wp-content/uploads/2017/08/hackerman.jpg)
-:::  
+
+#### Wow you did it probably!
+[so cool 😎](https://cdn.costumewall.com/wp-content/uploads/2017/08/hackerman.jpg)
+
+:::
 
 ## 3. Open the repository **folder** in VS Code
 :::info
