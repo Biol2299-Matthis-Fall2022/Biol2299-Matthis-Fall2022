@@ -11,22 +11,21 @@
 Do **EITHER** Method 1 **OR** Method 2 (doing both is redundant)
 ```
 
-### **Method 1 (Beginner/Easy mode)**
+### **Method 1 (Beginner/Easy mode)** - Download the repository from the web page   
 ```{admonition} Beginner/Easy mode
-:tags: ["margin"]
 This method involves manually downloading the class repository from the GitHub website. 
 
 Its simple and straightforward, and the **recommended** option for folks who want to get things up and running as quickly as possible.
 ```
-- Download the repository from the web page
-        - go to : https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022
-        - Click on `Code` button
-        - Select `Download ZIP`
-        - Unzip it somewhere on your computer
-        - PROCEED TO STEP 3
+
+- Go to : https://github.com/Biol2299-Matthis-Fall2022/Biol2299-Matthis-Fall2022   
+- Click on `Code` button   
+- Select `Download ZIP`   
+- Unzip it somewhere on your computer   
+- PROCEED TO STEP 3   
         
-### **Method 2 (Advanced/Cool kid hacker mode)**   
-```{admonitin}Advanced/Cool kid hacker mode
+### **Method 2 (Advanced/Cool kid hacker mode)** - Clone the repo to your PC with `git`   
+```{admonition} Advanced/Cool kid hacker mode
 This method involves cloning the repository from the command line using `git`.
 
 It's rather more advanced, but it will provide XP in the powerful magicks of `git` and 'command line'/'terminal' usage - which are important skills to master if you want to be a fancy pants comp sci hacker type 👽
