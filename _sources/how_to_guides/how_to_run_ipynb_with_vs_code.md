@@ -62,11 +62,12 @@ Usually, we would want to open the *entire folder* in the software IDE (e.g. VS 
 In VS Code, in the top bar (aka the `Menu bar`)
 - File > 'Open File'
     - Select/Open the `freemocap_center_of_mass_analysis.ipynb` file in the folder you downloaded/cloned in [Step 2](#2-Get-the-code-on-your-computer-somehow)
-:::info
+```{note}
 The path to t will be called something like:
 ```bash     
 [path_to_the_location_of_the_repo]/Biol2299-Matthis-Fall2022\jupyter_book/jupyter_ipython_notebooks/freemocap_center_of_mass_analysis.ipynb
 ```     
+
 
 where `path_to_the_location_of_the_repo` is, like, the path to the location of the repository on your computer. 
 
@@ -74,6 +75,7 @@ For me, it looks like:
 
 ```bash
 C:\Users\jonma\OneDrive\Desktop\Biol2299-Matthis-Fall2022\jupyter_book\jupyter_ipython_notebooks\freemocap_center_of_mass_analysis.ipynb
+```
 ```
 
 ```{admonition} Success?!
@@ -88,5 +90,18 @@ https://biol2299-matthis-fall2022.github.io/Biol2299-Matthis-Fall2022/jupyter_ip
 
 ### Did it work? 
 
-Probably not, honestly lol. I feel like I'm probably missing some stpes here, so it'll take some work to make this how-to actually viable. We'll get there  😅
+Probably not, honestly lol. 
+
+I feel like I'm probably missing some stpes here, so it'll take some work to make this how-to actually viable. 
+
+Also, at the very least, you'll need to remove the:
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+...part and alter the `freemocap_data_folder_path` variable to point towards the `data` folder (which you'll also need to've downloaded onto your computer)
+
+We'll get there  😅
 

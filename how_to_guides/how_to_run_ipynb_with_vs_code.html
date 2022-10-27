@@ -565,6 +565,27 @@ title="Print to PDF"
    </code>
    file  in VS Code
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#click-on-the-run-all-button-in-the-top-bar">
+     4. Click on the
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Run
+      </span>
+      <span class="pre">
+       All
+      </span>
+     </code>
+     button in the top bar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#did-it-work">
+     Did it work?
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -631,6 +652,27 @@ title="Print to PDF"
    </code>
    file  in VS Code
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#click-on-the-run-all-button-in-the-top-bar">
+     4. Click on the
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Run
+      </span>
+      <span class="pre">
+       All
+      </span>
+     </code>
+     button in the top bar
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#did-it-work">
+     Did it work?
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -730,35 +772,43 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-<div class="highlight-info notranslate"><div class="highlight"><pre><span></span>The path to t will be called something like:
-```bash     
-[path_to_the_location_of_the_repo]/Biol2299-Matthis-Fall2022\jupyter_book/jupyter_ipython_notebooks/freemocap_center_of_mass_analysis.ipynb
-```     
-
-where `path_to_the_location_of_the_repo` is, like, the path to the location of the repository on your computer. 
-
-For me, it looks like:
-
-```bash
-C:\Users\jonma\OneDrive\Desktop\Biol2299-Matthis-Fall2022\jupyter_book\jupyter_ipython_notebooks\freemocap_center_of_mass_analysis.ipynb
-```
-
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The path to t will be called something like:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>path_to_the_location_of_the_repo<span class="o">]</span>/Biol2299-Matthis-Fall2022<span class="se">\j</span>upyter_book/jupyter_ipython_notebooks/freemocap_center_of_mass_analysis.ipynb
+</pre></div>
+</div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">path_to_the_location_of_the_repo</span></code> is, like, the path to the location of the repository on your computer.</p>
+<p>For me, it looks like:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>C:<span class="se">\U</span>sers<span class="se">\j</span>onma<span class="se">\O</span>neDrive<span class="se">\D</span>esktop<span class="se">\B</span>iol2299-Matthis-Fall2022<span class="se">\j</span>upyter_book<span class="se">\j</span>upyter_ipython_notebooks<span class="se">\f</span>reemocap_center_of_mass_analysis.ipynb
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
 ```{admonition} Success?!
 If all went well, your VS Code window will look roughly similar to the equivalent page on the lab website: 
 
 https://biol2299-matthis-fall2022.github.io/Biol2299-Matthis-Fall2022/jupyter_ipython_notebooks/freemocap_center_of_mass_analysis.html
-```
-
-### 4. Click on the `Run All` button in the top bar
-- Just select defaults and/or say &#39;Yes&#39; to any prompts that pop up
-
-
-### Did it work? 
-
-Probably not, honestly lol. I feel like I&#39;m probably missing some stpes here, so it&#39;ll take some work to make this how-to actually viable. We&#39;ll get there  😅
-
 </pre></div>
 </div>
+<section id="click-on-the-run-all-button-in-the-top-bar">
+<h3>4. Click on the <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">All</span></code> button in the top bar<a class="headerlink" href="#click-on-the-run-all-button-in-the-top-bar" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Just select defaults and/or say ‘Yes’ to any prompts that pop up</p></li>
+</ul>
+</section>
+<section id="did-it-work">
+<h3>Did it work?<a class="headerlink" href="#did-it-work" title="Permalink to this headline">#</a></h3>
+<p>Probably not, honestly lol.</p>
+<p>I feel like I’m probably missing some stpes here, so it’ll take some work to make this how-to actually viable.</p>
+<p>Also, at the very least, you’ll need to remove the:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>…part and alter the <code class="docutils literal notranslate"><span class="pre">freemocap_data_folder_path</span></code> variable to point towards the <code class="docutils literal notranslate"><span class="pre">data</span></code> folder (which you’ll also need to’ve downloaded onto your computer)</p>
+<p>We’ll get there  😅</p>
+</section>
 </section>
 </section>
 
