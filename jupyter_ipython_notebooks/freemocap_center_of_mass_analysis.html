@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Center of Mass vs Base of Support analysis &#8212; Biology 2299 - Inquiries in Biological Sciences (Section 10): The Neural Control of Real-World Behavior</title>
+    <title>This is an iPython Jupyter Notebook to let us look at some of the data we collected in class on 2022-09-26 &#8212; Biology 2299 - Inquiries in Biological Sciences (Section 10): The Neural Control of Real-World Behavior</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -291,7 +291,7 @@ const thebe_selector_output = ".output, .cell_output"
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Center of Mass vs Base of Support analysis
+     This is an iPython Jupyter Notebook to let us look at some of the data we collected in class on 2022-09-26
     </a>
    </li>
   </ul>
@@ -567,27 +567,14 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#install-using-pip-and-then-import-the-python-packages-we-ll-need">
-   Install (using
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     pip
-    </span>
-   </code>
-   and then import the python packages we’ll need)
+  <a class="reference internal nav-link" href="#import-the-python-packages-we-ll-need">
+   Import the python packages we’ll need
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#step-0-connect-to-the-google-drive-where-the-data-is-stored">
-   Step 0 - Connect to the Google Drive where the data is stored
+  <a class="reference internal nav-link" href="#get-the-paths-to-the-files-and-data-we-ll-need">
+   Get the paths to the files and data we’ll need
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#get-path-to-the-overall-session-folder">
-     Get path to the overall session folder
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -598,7 +585,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Center of Mass vs Base of Support analysis</h1>
+                <h1>This is an iPython Jupyter Notebook to let us look at some of the data we collected in class on 2022-09-26</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -609,27 +596,14 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#install-using-pip-and-then-import-the-python-packages-we-ll-need">
-   Install (using
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     pip
-    </span>
-   </code>
-   and then import the python packages we’ll need)
+  <a class="reference internal nav-link" href="#import-the-python-packages-we-ll-need">
+   Import the python packages we’ll need
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#step-0-connect-to-the-google-drive-where-the-data-is-stored">
-   Step 0 - Connect to the Google Drive where the data is stored
+  <a class="reference internal nav-link" href="#get-the-paths-to-the-files-and-data-we-ll-need">
+   Get the paths to the files and data we’ll need
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#get-path-to-the-overall-session-folder">
-     Get path to the overall session folder
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -641,21 +615,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="center-of-mass-vs-base-of-support-analysis">
-<h1>Center of Mass vs Base of Support analysis<a class="headerlink" href="#center-of-mass-vs-base-of-support-analysis" title="Permalink to this headline">#</a></h1>
-<p>This is an iPython Jupyter Notebook to let us look at some of the data we collected in class on 2022-09-26</p>
-<section id="install-using-pip-and-then-import-the-python-packages-we-ll-need">
-<h2>Install (using <code class="docutils literal notranslate"><span class="pre">pip</span></code> and then import the python packages we’ll need)<a class="headerlink" href="#install-using-pip-and-then-import-the-python-packages-we-ll-need" title="Permalink to this headline">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install numpy --quiet
-<span class="o">!</span>pip install pandas --quiet
-<span class="o">!</span>pip install matplotlib --quiet
-<span class="o">!</span>pip install rich --quiet
-</pre></div>
-</div>
-</div>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="this-is-an-ipython-jupyter-notebook-to-let-us-look-at-some-of-the-data-we-collected-in-class-on-2022-09-26">
+<h1>This is an iPython Jupyter Notebook to let us look at some of the data we collected in class on 2022-09-26<a class="headerlink" href="#this-is-an-ipython-jupyter-notebook-to-let-us-look-at-some-of-the-data-we-collected-in-class-on-2022-09-26" title="Permalink to this headline">#</a></h1>
+<section id="import-the-python-packages-we-ll-need">
+<h2>Import the python packages we’ll need<a class="headerlink" href="#import-the-python-packages-we-ll-need" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -663,85 +626,50 @@ title="Print to PDF"
 <span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="c1"># matplotlib.use(&quot;qt5agg&quot;)</span>
-<span class="c1"># %matplotlib inline</span>
-<span class="c1"># plt.style.use(&#39;classic&#39;)</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="step-0-connect-to-the-google-drive-where-the-data-is-stored">
-<h2>Step 0 - Connect to the Google Drive where the data is stored<a class="headerlink" href="#step-0-connect-to-the-google-drive-where-the-data-is-stored" title="Permalink to this headline">#</a></h2>
+<section id="get-the-paths-to-the-files-and-data-we-ll-need">
+<h2>Get the paths to the files and data we’ll need<a class="headerlink" href="#get-the-paths-to-the-files-and-data-we-ll-need" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
-<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># folders and stuff</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span>
+
+<span class="n">root</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
+<span class="n">root</span><span class="o">.</span><span class="n">withdraw</span><span class="p">()</span>
+
+<span class="c1"># Open a tkinter file dialog to select the session id folder you want to analyze</span>
+<span class="n">session_folder_path</span> <span class="o">=</span> <span class="n">filedialog</span><span class="o">.</span><span class="n">askdirectory</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Select The Desired Session ID Folder&quot;</span><span class="p">)</span>
+<span class="n">session_folder_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">session_folder_path</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">session_folder_path</span><span class="p">)</span>
+<span class="n">data_arrays_path</span> <span class="o">=</span> <span class="n">session_folder_path</span> <span class="o">/</span> <span class="s1">&#39;DataArrays&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The path to the data arrays is:&quot;</span><span class="p">,</span> <span class="n">data_arrays_path</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<span class="ne">TclError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">5</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span>
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="n">root</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">root</span><span class="o">.</span><span class="n">withdraw</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="c1"># Open a tkinter file dialog to select the session id folder you want to analyze</span>
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;google&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<p>`## Get the paths to the files and data we’ll need</p>
-<section id="get-path-to-the-overall-session-folder">
-<h3>Get path to the overall session folder<a class="headerlink" href="#get-path-to-the-overall-session-folder" title="Permalink to this headline">#</a></h3>
-<p>(i.e. the folder full of subject folders)</p>
-<p>If this part raises and error:</p>
-<ol class="simple">
-<li><p>navigate to the <code class="docutils literal notranslate"><span class="pre">freemocap_bos_com_standing_data</span></code> folder on the left menu</p></li>
-<li><p>click the three dots to the right of the folder,</p></li>
-<li><p>Select ‘Copy Path’</p></li>
-<li><p>Replace the stuff inside the “quotation marks” in the <code class="docutils literal notranslate"><span class="pre">freemocap_data_folder_path</span> <span class="pre">=</span> <span class="pre">&quot;path_string&quot;</span></code> with the path you have in your clip board (i.e. paste it with <code class="docutils literal notranslate"><span class="pre">ctrl-v</span></code></p></li>
-</ol>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># path to the full data folder</span>
-<span class="n">freemocap_data_folder_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;/content/drive/MyDrive/Biol2299_Fall2022/com_vs_bos_standing_data&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># choose which subject (session folder) we are going to look at</span>
-<span class="n">session_id</span> <span class="o">=</span> <span class="s2">&quot;sesh_2022-09-28_15_45_39&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># build the paths to the specific subfolders we care about</span>
-<span class="n">session_folder_path</span> <span class="o">=</span> <span class="n">freemocap_data_folder_path</span> <span class="o">/</span> <span class="n">session_id</span>
-<span class="n">data_arrays_path</span> <span class="o">=</span> <span class="n">session_folder_path</span><span class="o">/</span><span class="s1">&#39;DataArrays&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># manually create &#39;session specific info&#39; dictionary</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/tkinter/__init__.py:2270,</span> in <span class="ni">Tk.__init__</span><span class="nt">(self, screenName, baseName, className, useTk, sync, use)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2268</span>         <span class="n">baseName</span> <span class="o">=</span> <span class="n">baseName</span> <span class="o">+</span> <span class="n">ext</span>
+<span class="g g-Whitespace">   </span><span class="mi">2269</span> <span class="n">interactive</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="ne">-&gt; </span><span class="mi">2270</span> <span class="bp">self</span><span class="o">.</span><span class="n">tk</span> <span class="o">=</span> <span class="n">_tkinter</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">screenName</span><span class="p">,</span> <span class="n">baseName</span><span class="p">,</span> <span class="n">className</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">wantobjects</span><span class="p">,</span> <span class="n">useTk</span><span class="p">,</span> <span class="n">sync</span><span class="p">,</span> <span class="n">use</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2271</span> <span class="k">if</span> <span class="n">useTk</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">2272</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_loadtk</span><span class="p">()</span>
 
-<span class="n">session_specific_information_dictionary</span> <span class="o">=</span>     <span class="p">{</span>
-    <span class="n">session_id</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;no_weight&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;right_foot&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="s2">&quot;start_frame&quot;</span><span class="p">:</span> <span class="mi">2500</span><span class="p">,</span>
-             <span class="s2">&quot;end_frame&quot;</span><span class="p">:</span> <span class="mi">3500</span>
-<span class="p">}</span>
-<span class="p">}</span>
-<span class="p">}</span>
-<span class="p">}</span>
+<span class="ne">TclError</span>: no display name and no $DISPLAY environment variable
 </pre></div>
 </div>
 </div>
@@ -767,113 +695,55 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pull out the data from the `nose` marker</span>
-
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Examples of how to access elements of the data array</span>
 <span class="n">nose_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_x&quot;</span><span class="p">]</span>
 <span class="n">nose_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_y&quot;</span><span class="p">]</span>
 <span class="n">nose_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_z&quot;</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;nose_x.shape: </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> (that means that there were </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> recorded frames &quot;</span><span class="p">)</span> <span class="c1">#make sure the data is the shape we expect </span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># simple plot of `nose_x, y, and z` time series</span>
-
-<span class="o">%</span><span class="k">matplotlib</span> inline
-
-<span class="n">fig1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-<span class="n">fig1</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Nose Timeseries&quot;</span><span class="p">)</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_x</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_y</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_z</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># build the paths to the specific subfolders we care about</span>
-<span class="n">session_folder_path</span> <span class="o">=</span> <span class="n">freemocap_data_folder_path</span> <span class="o">/</span> <span class="n">session_id</span>
-<span class="n">data_arrays_path</span> <span class="o">=</span> <span class="n">session_folder_path</span><span class="o">/</span><span class="s1">&#39;DataArrays&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># manually create &#39;session specific info&#39; dictionary</span>
-
-<span class="n">session_specific_information_dictionary</span> <span class="o">=</span>     <span class="p">{</span>
-    <span class="n">session_id</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;no_weight&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;right_foot&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="s2">&quot;start_frame&quot;</span><span class="p">:</span> <span class="mi">2500</span><span class="p">,</span>
-             <span class="s2">&quot;end_frame&quot;</span><span class="p">:</span> <span class="mi">3500</span>
-<span class="p">}</span>
-<span class="p">}</span>
-<span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Specific file paths</span>
-<span class="n">com_xyz_npy_path</span> <span class="o">=</span> <span class="n">data_arrays_path</span> <span class="o">/</span> <span class="s2">&quot;totalBodyCOM_frame_XYZ.npy&quot;</span>
-<span class="n">skeleton_body_dots_csv_path</span> <span class="o">=</span> <span class="n">data_arrays_path</span> <span class="o">/</span> <span class="s2">&quot;mediapipe_body_3d_xyz.csv&quot;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load the data in</span>
-
-<span class="n">com_xyz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">com_xyz_npy_path</span><span class="p">)</span>
-<span class="n">skeleton_dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">skeleton_body_dots_csv_path</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pull out the data from the `nose` marker</span>
-
-<span class="n">nose_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_x&quot;</span><span class="p">]</span>
-<span class="n">nose_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_y&quot;</span><span class="p">]</span>
-<span class="n">nose_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_z&quot;</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;nose_x.shape: </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> (that means that there were </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> recorded frames &quot;</span><span class="p">)</span> <span class="c1">#make sure the data is the shape we expect </span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;nose_x.shape: </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nose_x.shape: (6980,) (that means that there were (6980,) recorded frames 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nose_x.shape: (6980,)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># simple plot of `nose_x, y, and z` time series</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This function plots a time series plot of a given body part</span>
+<span class="k">def</span> <span class="nf">plotXYZOverTime</span><span class="p">(</span><span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">,</span> <span class="n">column3</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">colors</span><span class="p">):</span>
 
-<span class="o">%</span><span class="k">matplotlib</span> inline
+    <span class="n">xdata</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="n">column1</span><span class="p">]</span>
+    <span class="n">ydata</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="n">column2</span><span class="p">]</span>
+    <span class="n">zdata</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="n">column3</span><span class="p">]</span>
 
-<span class="n">fig1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-<span class="n">fig1</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Nose Timeseries&quot;</span><span class="p">)</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_x</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_y</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_z</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="n">plt1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xdata</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">plot2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ydata</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">plot3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">zdata</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Position of &quot;</span> <span class="o">+</span> <span class="nb">object</span> <span class="o">+</span> <span class="s2">&quot; Over Time&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Frame Number&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Value&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="nb">object</span> <span class="o">+</span> <span class="s2">&quot; X&quot;</span><span class="p">,</span> <span class="nb">object</span> <span class="o">+</span> <span class="s2">&quot; Y&quot;</span><span class="p">,</span> <span class="nb">object</span><span class="o">+</span> <span class="s2">&quot;Z&quot;</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># To change the color of the lines on the plot, change these three variables</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">]</span>
+
+<span class="c1"># produces a simple plot of `com_xyz` time series of nose</span>
+<span class="n">plotXYZOverTime</span><span class="p">(</span><span class="s2">&quot;nose_x&quot;</span><span class="p">,</span> <span class="s2">&quot;nose_y&quot;</span><span class="p">,</span> <span class="s2">&quot;nose_z&quot;</span><span class="p">,</span> <span class="s2">&quot;Nose&quot;</span><span class="p">,</span> <span class="n">colors</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/freemocap_center_of_mass_analysis_10_0.png" src="../_images/freemocap_center_of_mass_analysis_10_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -887,7 +757,6 @@ title="Print to PDF"
 <span class="n">right_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_z&quot;</span><span class="p">]</span>
 
 
-
 <span class="n">cx</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">2500</span><span class="p">,</span><span class="mi">3500</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">cy</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">2500</span><span class="p">,</span><span class="mi">3500</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
@@ -896,23 +765,227 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-<span class="c1"># ax = fig2.add_subplot()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Change the frame numbers for an area of interest</span>
+<span class="n">startFrame</span> <span class="o">=</span> <span class="mi">2500</span>
+<span class="n">endFrame</span> <span class="o">=</span> <span class="mi">3500</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="mi">2500</span><span class="p">:</span><span class="mi">3500</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="mi">2500</span><span class="p">:</span><span class="mi">3500</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="mi">2500</span><span class="p">:</span><span class="mi">3500</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="mi">2500</span><span class="p">:</span><span class="mi">3500</span><span class="p">],</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
 
+<span class="n">fig2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="n">startFrame</span><span class="p">:</span><span class="n">endFrame</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="n">startFrame</span><span class="p">:</span><span class="n">endFrame</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="n">startFrame</span><span class="p">:</span><span class="n">endFrame</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="n">startFrame</span><span class="p">:</span><span class="n">endFrame</span><span class="p">],</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cx</span><span class="p">,</span> <span class="n">cy</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">)</span>
-
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Foot Position vs. Center of Mass While Standing on One Foot&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;X Position&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Y Position&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;Right Toe&quot;</span><span class="p">,</span> <span class="s2">&quot;Right Heel&quot;</span><span class="p">,</span> <span class="s2">&quot;Center Of Mass&quot;</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/freemocap_center_of_mass_analysis_23_0.png" src="../_images/freemocap_center_of_mass_analysis_23_0.png" />
+<img alt="../_images/freemocap_center_of_mass_analysis_12_0.png" src="../_images/freemocap_center_of_mass_analysis_12_0.png" />
 </div>
 </div>
-</section>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#This function creates two subplots with the first showing location of foot vs cetner of mass while holding a weight, second without holding weight</span>
+
+<span class="k">def</span> <span class="nf">plotWithandWithoutWeight</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span> <span class="n">endFrameNoWeight</span><span class="p">,</span> <span class="n">startFrameWithWeight</span><span class="p">,</span> <span class="n">endFrameWithWeight</span><span class="p">,</span> <span class="n">onefoot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">foot</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">):</span>
+    <span class="c1">#extract the data from the data frame</span>
+    <span class="n">right_toe_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_x&quot;</span><span class="p">]</span>
+    <span class="n">right_toe_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_y&quot;</span><span class="p">]</span>
+    <span class="n">right_toe_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_z&quot;</span><span class="p">]</span>
+
+    <span class="n">right_heel_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_x&quot;</span><span class="p">]</span>
+    <span class="n">right_heel_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_y&quot;</span><span class="p">]</span>
+    <span class="n">right_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_z&quot;</span><span class="p">]</span>
+
+    <span class="n">left_toe_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_x&quot;</span><span class="p">]</span>
+    <span class="n">left_toe_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_y&quot;</span><span class="p">]</span>
+    <span class="n">left_toe_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_z&quot;</span><span class="p">]</span>
+
+    <span class="n">left_heel_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_x&quot;</span><span class="p">]</span>
+    <span class="n">left_heel_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_y&quot;</span><span class="p">]</span>
+    <span class="n">left_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_z&quot;</span><span class="p">]</span>
+
+    <span class="n">cxWeight</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameWithWeight</span><span class="p">,</span><span class="n">endFrameWithWeight</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">cyWeight</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameWithWeight</span><span class="p">,</span><span class="n">endFrameWithWeight</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
+    
+    <span class="n">cxNoWeight</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span><span class="n">endFrameNoWeight</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">cyNoWeight</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span><span class="n">endFrameNoWeight</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
+
+
+    <span class="c1">#Create the plots</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Foot Postition vs. Center of Mass&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">onefoot</span><span class="o">==</span><span class="kc">False</span> <span class="ow">or</span> <span class="p">(</span><span class="n">onefoot</span> <span class="ow">and</span> <span class="n">foot</span><span class="o">==</span><span class="s2">&quot;right&quot;</span><span class="p">)):</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="p">(</span><span class="n">onefoot</span><span class="o">==</span><span class="kc">False</span> <span class="ow">or</span> <span class="p">(</span><span class="n">onefoot</span> <span class="ow">and</span> <span class="n">foot</span><span class="o">==</span><span class="s2">&quot;left&quot;</span><span class="p">)):</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_toe_x</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="n">left_toe_y</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="s1">&#39;orange&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_heel_x</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="n">left_heel_y</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="s1">&#39;purple&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_toe_x</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="n">left_toe_y</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="s1">&#39;orange&#39;</span><span class="p">)</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_heel_x</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="n">left_heel_y</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="s1">&#39;purple&#39;</span><span class="p">)</span>
+    
+    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cxNoWeight</span><span class="p">,</span> <span class="n">cyNoWeight</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cxWeight</span><span class="p">,</span> <span class="n">cyWeight</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">)</span>
+
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;With Weight&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Without Weight&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;X Position&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y Position&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;X Position&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">onefoot</span><span class="p">):</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;Toe&quot;</span><span class="p">,</span> <span class="s2">&quot;Heel&quot;</span><span class="p">,</span> <span class="s2">&quot;Center Of Mass&quot;</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;Left Toe&quot;</span><span class="p">,</span> <span class="s2">&quot;Left Heel&quot;</span><span class="p">,</span> <span class="s2">&quot;Right Toe&quot;</span><span class="p">,</span> <span class="s2">&quot;Right Heel&quot;</span><span class="p">,</span> <span class="s2">&quot;Center Of Mass&quot;</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change these to the desired frame numbers for when participants are standing on right foot with/without weight</span>
+<span class="n">startFrameWithWeight</span> <span class="o">=</span> <span class="mi">2500</span>
+<span class="n">endFrameWithWeight</span> <span class="o">=</span> <span class="mi">3500</span>
+<span class="n">startFrameNoWeight</span> <span class="o">=</span> <span class="mi">2500</span>
+<span class="n">endFrameNoWeight</span> <span class="o">=</span> <span class="mi">3500</span>
+
+
+<span class="c1"># Plot weight vs no weight right foot</span>
+<span class="n">plotWithandWithoutWeight</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span> <span class="n">endFrameNoWeight</span><span class="p">,</span> <span class="n">startFrameWithWeight</span><span class="p">,</span> <span class="n">endFrameWithWeight</span><span class="p">,</span> <span class="n">onefoot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">foot</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/freemocap_center_of_mass_analysis_14_0.png" src="../_images/freemocap_center_of_mass_analysis_14_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change these to the desired frame numbers for when participants are standing on left foot with/without weight</span>
+<span class="n">startFrameWithWeight</span> <span class="o">=</span> <span class="mi">2500</span>
+<span class="n">endFrameWithWeight</span> <span class="o">=</span> <span class="mi">3500</span>
+<span class="n">startFrameNoWeight</span> <span class="o">=</span> <span class="mi">2500</span>
+<span class="n">endFrameNoWeight</span> <span class="o">=</span> <span class="mi">3500</span>
+
+<span class="c1">#Plot weight vs no weight left foot</span>
+<span class="n">plotWithandWithoutWeight</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span> <span class="n">endFrameNoWeight</span><span class="p">,</span> <span class="n">startFrameWithWeight</span><span class="p">,</span> <span class="n">endFrameWithWeight</span><span class="p">,</span> <span class="n">onefoot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">foot</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/freemocap_center_of_mass_analysis_15_0.png" src="../_images/freemocap_center_of_mass_analysis_15_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change these to the desired frame numbers for when participants are standing on both feet with/without weight</span>
+<span class="n">startFrameWithWeight</span> <span class="o">=</span> <span class="mi">2500</span>
+<span class="n">endFrameWithWeight</span> <span class="o">=</span> <span class="mi">3500</span>
+<span class="n">startFrameNoWeight</span> <span class="o">=</span> <span class="mi">2500</span>
+<span class="n">endFrameNoWeight</span> <span class="o">=</span> <span class="mi">3500</span>
+
+<span class="c1">#Plot weight vs no weight both</span>
+<span class="n">plotWithandWithoutWeight</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span> <span class="n">endFrameNoWeight</span><span class="p">,</span> <span class="n">startFrameWithWeight</span><span class="p">,</span> <span class="n">endFrameWithWeight</span><span class="p">,</span> <span class="n">onefoot</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/freemocap_center_of_mass_analysis_16_0.png" src="../_images/freemocap_center_of_mass_analysis_16_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#This function creates two subplots with the first showing location of foot vs cetner of mass while holding a weight, second without holding weight</span>
+<span class="k">def</span> <span class="nf">plotOneVsTwoFeet</span><span class="p">(</span><span class="n">startFrameOneFoot</span><span class="p">,</span> <span class="n">endFrameOneFoot</span><span class="p">,</span> <span class="n">startFrameTwoFeet</span><span class="p">,</span> <span class="n">endFrameTwoFeet</span><span class="p">,</span> <span class="n">colors</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="c1">#extract the data from the data frame</span>
+    <span class="n">right_toe_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_x&quot;</span><span class="p">]</span>
+    <span class="n">right_toe_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_y&quot;</span><span class="p">]</span>
+    <span class="n">right_toe_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_z&quot;</span><span class="p">]</span>
+
+    <span class="n">right_heel_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_x&quot;</span><span class="p">]</span>
+    <span class="n">right_heel_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_y&quot;</span><span class="p">]</span>
+    <span class="n">right_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_z&quot;</span><span class="p">]</span>
+
+    <span class="n">left_toe_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_x&quot;</span><span class="p">]</span>
+    <span class="n">left_toe_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_y&quot;</span><span class="p">]</span>
+    <span class="n">left_toe_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_z&quot;</span><span class="p">]</span>
+
+    <span class="n">left_heel_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_x&quot;</span><span class="p">]</span>
+    <span class="n">left_heel_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_y&quot;</span><span class="p">]</span>
+    <span class="n">left_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_z&quot;</span><span class="p">]</span>
+
+    <span class="n">cxTwoFeet</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameOneFoot</span><span class="p">,</span><span class="n">endFrameOneFoot</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">cyTwoFeet</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameOneFoot</span><span class="p">,</span><span class="n">endFrameOneFoot</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
+    
+    <span class="n">cxOneFoot</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameTwoFeet</span><span class="p">,</span><span class="n">endFrameTwoFeet</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">cyOneFoot</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameTwoFeet</span><span class="p">,</span><span class="n">endFrameTwoFeet</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
+
+
+    <span class="c1">#Create the plots</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Foot Position vs. Center of Mass&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+    <span class="c1">#Plot one foot</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="n">startFrameOneFoot</span><span class="p">:</span><span class="n">endFrameOneFoot</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="n">startFrameOneFoot</span><span class="p">:</span><span class="n">endFrameOneFoot</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="n">startFrameOneFoot</span><span class="p">:</span><span class="n">endFrameOneFoot</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="n">startFrameOneFoot</span><span class="p">:</span><span class="n">endFrameOneFoot</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cxOneFoot</span><span class="p">,</span> <span class="n">cyOneFoot</span><span class="p">,</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    
+    <span class="c1">#Plot both feet</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_toe_x</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">left_toe_y</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_heel_x</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">left_heel_y</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cxTwoFeet</span><span class="p">,</span> <span class="n">cyTwoFeet</span><span class="p">,</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+   
+
+
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Both Feet&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;One Foot&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;X Position&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y Position&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;X Position&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;Toe&quot;</span><span class="p">,</span> <span class="s2">&quot;Heel&quot;</span><span class="p">,</span> <span class="s2">&quot;Center Of Mass&quot;</span><span class="p">])</span>
+ 
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plots one vs two feet (can also use this to plot one vs two feet while holding a weight, just change the start frames accordingly)</span>
+
+<span class="n">startFrameOneFoot</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">endFrameOneFoot</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">startFrameTwoFeet</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">endFrameTwoFeet</span><span class="o">=</span> <span class="mi">1000</span>
+
+<span class="c1">#Change colors if desired</span>
+<span class="n">colors</span><span class="o">=</span> <span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">]</span>
+
+<span class="n">plotOneVsTwoFeet</span><span class="p">(</span><span class="n">startFrameOneFoot</span><span class="p">,</span> <span class="n">endFrameOneFoot</span><span class="p">,</span> <span class="n">startFrameTwoFeet</span><span class="p">,</span> <span class="n">endFrameTwoFeet</span><span class="p">,</span> <span class="n">colors</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/freemocap_center_of_mass_analysis_18_0.png" src="../_images/freemocap_center_of_mass_analysis_18_0.png" />
+</div>
+</div>
 </section>
 </section>
 
