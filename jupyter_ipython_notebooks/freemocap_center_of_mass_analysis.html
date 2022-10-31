@@ -621,11 +621,35 @@ title="Print to PDF"
 <h2>Import the python packages we’ll need<a class="headerlink" href="#import-the-python-packages-we-ll-need" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;install numpy&quot;</span><span class="p">)</span>
+<span class="o">!</span>pip install numpy --quiet
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;install pandas&quot;</span><span class="p">)</span>
+<span class="o">!</span>pip install pandas --quiet
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;install matplotlib&quot;</span><span class="p">)</span>
+<span class="o">!</span>pip install matplotlib --quiet
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>install numpy
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>install pandas
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>install matplotlib
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
 <span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 </div>
@@ -636,15 +660,15 @@ title="Print to PDF"
 <h2>Get the paths to the files and data we’ll need<a class="headerlink" href="#get-the-paths-to-the-files-and-data-we-ll-need" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># folders and stuff</span>
-<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># # folders and stuff</span>
+<span class="c1"># from tkinter import *</span>
+<span class="c1"># from tkinter import filedialog</span>
 
-<span class="n">root</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
-<span class="n">root</span><span class="o">.</span><span class="n">withdraw</span><span class="p">()</span>
+<span class="c1"># root = Tk()</span>
+<span class="c1"># root.withdraw()</span>
 
 <span class="c1"># Open a tkinter file dialog to select the session id folder you want to analyze</span>
-<span class="n">session_folder_path</span> <span class="o">=</span> <span class="n">filedialog</span><span class="o">.</span><span class="n">askdirectory</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Select The Desired Session ID Folder&quot;</span><span class="p">)</span>
+<span class="n">session_folder_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\Users\jonma\Dropbox\Northeastern\Courses\Biol2299\2022_09_Fall\com_vs_bos_data\FreeMocap_Data\sesh_2022-09-28_15_45_39&quot;</span>
 <span class="n">session_folder_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">session_folder_path</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">session_folder_path</span><span class="p">)</span>
 <span class="n">data_arrays_path</span> <span class="o">=</span> <span class="n">session_folder_path</span> <span class="o">/</span> <span class="s1">&#39;DataArrays&#39;</span>
@@ -653,23 +677,8 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TclError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">5</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span>
-<span class="ne">----&gt; </span><span class="mi">5</span> <span class="n">root</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">root</span><span class="o">.</span><span class="n">withdraw</span><span class="p">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="c1"># Open a tkinter file dialog to select the session id folder you want to analyze</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/tkinter/__init__.py:2270,</span> in <span class="ni">Tk.__init__</span><span class="nt">(self, screenName, baseName, className, useTk, sync, use)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2268</span>         <span class="n">baseName</span> <span class="o">=</span> <span class="n">baseName</span> <span class="o">+</span> <span class="n">ext</span>
-<span class="g g-Whitespace">   </span><span class="mi">2269</span> <span class="n">interactive</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="ne">-&gt; </span><span class="mi">2270</span> <span class="bp">self</span><span class="o">.</span><span class="n">tk</span> <span class="o">=</span> <span class="n">_tkinter</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">screenName</span><span class="p">,</span> <span class="n">baseName</span><span class="p">,</span> <span class="n">className</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">wantobjects</span><span class="p">,</span> <span class="n">useTk</span><span class="p">,</span> <span class="n">sync</span><span class="p">,</span> <span class="n">use</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2271</span> <span class="k">if</span> <span class="n">useTk</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2272</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_loadtk</span><span class="p">()</span>
-
-<span class="ne">TclError</span>: no display name and no $DISPLAY environment variable
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\jonma\Dropbox\Northeastern\Courses\Biol2299\2022_09_Fall\com_vs_bos_data\FreeMocap_Data\sesh_2022-09-28_15_45_39
+The path to the data arrays is: C:\Users\jonma\Dropbox\Northeastern\Courses\Biol2299\2022_09_Fall\com_vs_bos_data\FreeMocap_Data\sesh_2022-09-28_15_45_39/DataArrays
 </pre></div>
 </div>
 </div>
@@ -692,6 +701,25 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># load the data in</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">com_xyz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">com_xyz_npy_path</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">skeleton_dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">skeleton_body_dots_csv_path</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/numpy/lib/npyio.py:390,</span> in <span class="ni">load</span><span class="nt">(file, mmap_mode, allow_pickle, fix_imports, encoding)</span>
+<span class="g g-Whitespace">    </span><span class="mi">388</span>     <span class="n">own_fid</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">389</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">390</span>     <span class="n">fid</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">enter_context</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">os_fspath</span><span class="p">(</span><span class="n">file</span><span class="p">),</span> <span class="s2">&quot;rb&quot;</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">391</span>     <span class="n">own_fid</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">393</span> <span class="c1"># Code to distinguish from NumPy binary files and pickles.</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;C:\\Users\\jonma\\Dropbox\\Northeastern\\Courses\\Biol2299\\2022_09_Fall\\com_vs_bos_data\\FreeMocap_Data\\sesh_2022-09-28_15_45_39/DataArrays/totalBodyCOM_frame_XYZ.npy&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -701,11 +729,6 @@ title="Print to PDF"
 <span class="n">nose_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_z&quot;</span><span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;nose_x.shape: </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>nose_x.shape: (6980,)
 </pre></div>
 </div>
 </div>
@@ -741,9 +764,6 @@ title="Print to PDF"
 <span class="n">plotXYZOverTime</span><span class="p">(</span><span class="s2">&quot;nose_x&quot;</span><span class="p">,</span> <span class="s2">&quot;nose_y&quot;</span><span class="p">,</span> <span class="s2">&quot;nose_z&quot;</span><span class="p">,</span> <span class="s2">&quot;Nose&quot;</span><span class="p">,</span> <span class="n">colors</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/freemocap_center_of_mass_analysis_10_0.png" src="../_images/freemocap_center_of_mass_analysis_10_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -782,9 +802,6 @@ title="Print to PDF"
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/freemocap_center_of_mass_analysis_12_0.png" src="../_images/freemocap_center_of_mass_analysis_12_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -867,9 +884,6 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/freemocap_center_of_mass_analysis_14_0.png" src="../_images/freemocap_center_of_mass_analysis_14_0.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -884,9 +898,6 @@ title="Print to PDF"
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/freemocap_center_of_mass_analysis_15_0.png" src="../_images/freemocap_center_of_mass_analysis_15_0.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -900,9 +911,6 @@ title="Print to PDF"
 <span class="n">plotWithandWithoutWeight</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span> <span class="n">endFrameNoWeight</span><span class="p">,</span> <span class="n">startFrameWithWeight</span><span class="p">,</span> <span class="n">endFrameWithWeight</span><span class="p">,</span> <span class="n">onefoot</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/freemocap_center_of_mass_analysis_16_0.png" src="../_images/freemocap_center_of_mass_analysis_16_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -981,9 +989,6 @@ title="Print to PDF"
 <span class="n">plotOneVsTwoFeet</span><span class="p">(</span><span class="n">startFrameOneFoot</span><span class="p">,</span> <span class="n">endFrameOneFoot</span><span class="p">,</span> <span class="n">startFrameTwoFeet</span><span class="p">,</span> <span class="n">endFrameTwoFeet</span><span class="p">,</span> <span class="n">colors</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/freemocap_center_of_mass_analysis_18_0.png" src="../_images/freemocap_center_of_mass_analysis_18_0.png" />
 </div>
 </div>
 </section>
