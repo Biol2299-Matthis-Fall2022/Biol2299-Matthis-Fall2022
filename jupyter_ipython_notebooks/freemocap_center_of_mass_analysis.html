@@ -189,6 +189,11 @@ const thebe_selector_output = ".output, .cell_output"
      2022-11-02
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../class_day_notes/2022-11-28.html">
+     2022-11-28
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -631,12 +636,12 @@ title="Print to PDF"
 <h2>Import the python packages we’ll need<a class="headerlink" href="#import-the-python-packages-we-ll-need" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;install numpy&quot;</span><span class="p">)</span>
-<span class="o">!</span>pip install numpy --quiet
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;install pandas&quot;</span><span class="p">)</span>
-<span class="o">!</span>pip install pandas --quiet
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;install matplotlib&quot;</span><span class="p">)</span>
-<span class="o">!</span>pip install matplotlib --quiet
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>print(&quot;install numpy&quot;)
+!pip install numpy --quiet
+print(&quot;install pandas&quot;)
+!pip install pandas --quiet
+print(&quot;install matplotlib&quot;)
+!pip install matplotlib --quiet
 </pre></div>
 </div>
 </div>
@@ -644,35 +649,23 @@ title="Print to PDF"
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>install numpy
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip available: <span class=" -Color -Color-Red">22.3</span> -&gt; <span class=" -Color -Color-Green">22.3.1</span>
-<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
-</pre></div>
-</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>install pandas
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip available: <span class=" -Color -Color-Red">22.3</span> -&gt; <span class=" -Color -Color-Green">22.3.1</span>
-<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
-</pre></div>
-</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>install matplotlib
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip available: <span class=" -Color -Color-Red">22.3</span> -&gt; <span class=" -Color -Color-Green">22.3.1</span>
-<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import pandas as pd
+import matplotlib
+import matplotlib.pyplot as plt
+from pathlib import Path
+import numpy as np
 
-<span class="o">%</span><span class="k">matplotlib</span> inline
+%matplotlib inline
 </pre></div>
 </div>
 </div>
@@ -682,19 +675,19 @@ title="Print to PDF"
 <h2>Get the paths to the files and data we’ll need<a class="headerlink" href="#get-the-paths-to-the-files-and-data-we-ll-need" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># # folders and stuff</span>
-<span class="c1"># from tkinter import *</span>
-<span class="c1"># from tkinter import filedialog</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># # folders and stuff
+# from tkinter import *
+# from tkinter import filedialog
 
-<span class="c1"># root = Tk()</span>
-<span class="c1"># root.withdraw()</span>
+# root = Tk()
+# root.withdraw()
 
-<span class="c1"># Open a tkinter file dialog to select the session id folder you want to analyze</span>
-<span class="n">session_folder_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\Users\jonma\Dropbox\Northeastern\Courses\Biol2299\2022_09_Fall\com_vs_bos_data\FreeMocap_Data\sesh_2022-09-28_15_45_39&quot;</span>
-<span class="n">session_folder_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">session_folder_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">session_folder_path</span><span class="p">)</span>
-<span class="n">data_arrays_path</span> <span class="o">=</span> <span class="n">session_folder_path</span> <span class="o">/</span> <span class="s1">&#39;DataArrays&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The path to the data arrays is:&quot;</span><span class="p">,</span> <span class="n">data_arrays_path</span><span class="p">)</span>
+# Open a tkinter file dialog to select the session id folder you want to analyze
+session_folder_path = r&quot;C:\Users\jonma\Dropbox\Northeastern\Courses\Biol2299\2022_09_Fall\com_vs_bos_data\FreeMocap_Data\sesh_2022-09-28_15_45_39&quot;
+session_folder_path = Path(session_folder_path)
+print(session_folder_path)
+data_arrays_path = session_folder_path / &#39;DataArrays&#39;
+print(&quot;The path to the data arrays is:&quot;, data_arrays_path)
 </pre></div>
 </div>
 </div>
@@ -707,36 +700,36 @@ The path to the data arrays is: C:\Users\jonma\Dropbox\Northeastern\Courses\Biol
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Specific file paths</span>
-<span class="n">com_xyz_npy_path</span> <span class="o">=</span> <span class="n">data_arrays_path</span> <span class="o">/</span> <span class="s2">&quot;totalBodyCOM_frame_XYZ.npy&quot;</span>
-<span class="n">skeleton_body_dots_csv_path</span> <span class="o">=</span> <span class="n">data_arrays_path</span> <span class="o">/</span> <span class="s2">&quot;mediapipe_body_3d_xyz.csv&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>#Specific file paths
+com_xyz_npy_path = data_arrays_path / &quot;totalBodyCOM_frame_XYZ.npy&quot;
+skeleton_body_dots_csv_path = data_arrays_path / &quot;mediapipe_body_3d_xyz.csv&quot;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load the data in</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># load the data in
 
-<span class="n">com_xyz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">com_xyz_npy_path</span><span class="p">)</span>
-<span class="n">skeleton_dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">skeleton_body_dots_csv_path</span><span class="p">)</span>
+com_xyz = np.load(com_xyz_npy_path)
+skeleton_dataframe = pd.read_csv(skeleton_body_dots_csv_path)
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># load the data in</span>
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">com_xyz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">com_xyz_npy_path</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">skeleton_dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">skeleton_body_dots_csv_path</span><span class="p">)</span>
 
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/numpy/lib/npyio.py:390,</span> in <span class="ni">load</span><span class="nt">(file, mmap_mode, allow_pickle, fix_imports, encoding)</span>
-<span class="g g-Whitespace">    </span><span class="mi">388</span>     <span class="n">own_fid</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="g g-Whitespace">    </span><span class="mi">389</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">390</span>     <span class="n">fid</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">enter_context</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">os_fspath</span><span class="p">(</span><span class="n">file</span><span class="p">),</span> <span class="s2">&quot;rb&quot;</span><span class="p">))</span>
-<span class="g g-Whitespace">    </span><span class="mi">391</span>     <span class="n">own_fid</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="g g-Whitespace">    </span><span class="mi">393</span> <span class="c1"># Code to distinguish from NumPy binary files and pickles.</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/numpy/lib/npyio.py:405,</span> in <span class="ni">load</span><span class="nt">(file, mmap_mode, allow_pickle, fix_imports, encoding, max_header_size)</span>
+<span class="g g-Whitespace">    </span><span class="mi">403</span>     <span class="n">own_fid</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">404</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">405</span>     <span class="n">fid</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">enter_context</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">os_fspath</span><span class="p">(</span><span class="n">file</span><span class="p">),</span> <span class="s2">&quot;rb&quot;</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">406</span>     <span class="n">own_fid</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">408</span> <span class="c1"># Code to distinguish from NumPy binary files and pickles.</span>
 
 <span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;C:\\Users\\jonma\\Dropbox\\Northeastern\\Courses\\Biol2299\\2022_09_Fall\\com_vs_bos_data\\FreeMocap_Data\\sesh_2022-09-28_15_45_39/DataArrays/totalBodyCOM_frame_XYZ.npy&#39;
 </pre></div>
@@ -745,270 +738,272 @@ The path to the data arrays is: C:\Users\jonma\Dropbox\Northeastern\Courses\Biol
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Examples of how to access elements of the data array</span>
-<span class="n">nose_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_x&quot;</span><span class="p">]</span>
-<span class="n">nose_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_y&quot;</span><span class="p">]</span>
-<span class="n">nose_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_z&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Examples of how to access elements of the data array
+nose_x = skeleton_dataframe[&quot;nose_x&quot;]
+nose_y = skeleton_dataframe[&quot;nose_y&quot;]
+nose_z = skeleton_dataframe[&quot;nose_z&quot;]
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;nose_x.shape: </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+print(f&quot;nose_x.shape: {nose_x.shape}&quot;)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This function plots a time series plot of a given body part</span>
-<span class="k">def</span> <span class="nf">plotXYZOverTime</span><span class="p">(</span><span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">,</span> <span class="n">column3</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">colors</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># This function plots a time series plot of a given body part
+def plotXYZOverTime(column1, column2, column3, object, colors):
 
-    <span class="n">xdata</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="n">column1</span><span class="p">]</span>
-    <span class="n">ydata</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="n">column2</span><span class="p">]</span>
-    <span class="n">zdata</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="n">column3</span><span class="p">]</span>
+    xdata = skeleton_dataframe[column1]
+    ydata = skeleton_dataframe[column2]
+    zdata = skeleton_dataframe[column3]
 
 
-    <span class="n">plt1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xdata</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="n">plot2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ydata</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">plot3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">zdata</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Position of &quot;</span> <span class="o">+</span> <span class="nb">object</span> <span class="o">+</span> <span class="s2">&quot; Over Time&quot;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Frame Number&quot;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Value&quot;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="nb">object</span> <span class="o">+</span> <span class="s2">&quot; X&quot;</span><span class="p">,</span> <span class="nb">object</span> <span class="o">+</span> <span class="s2">&quot; Y&quot;</span><span class="p">,</span> <span class="nb">object</span><span class="o">+</span> <span class="s2">&quot;Z&quot;</span><span class="p">])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    plt1 = plt.plot(xdata, color=colors[0])
+    plot2 = plt.plot(ydata, color=colors[1])
+    plot3 = plt.plot(zdata, color=colors[2])
+    plt.title(&quot;Position of &quot; + object + &quot; Over Time&quot;)
+    plt.xlabel(&quot;Frame Number&quot;)
+    plt.ylabel(&quot;Value&quot;)
+    plt.legend([object + &quot; X&quot;, object + &quot; Y&quot;, object+ &quot;Z&quot;])
+    plt.show()
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># To change the color of the lines on the plot, change these three variables</span>
-<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># To change the color of the lines on the plot, change these three variables
+colors = [&quot;orange&quot;, &quot;green&quot;, &quot;blue&quot;]
 
-<span class="c1"># produces a simple plot of `com_xyz` time series of nose</span>
-<span class="n">plotXYZOverTime</span><span class="p">(</span><span class="s2">&quot;nose_x&quot;</span><span class="p">,</span> <span class="s2">&quot;nose_y&quot;</span><span class="p">,</span> <span class="s2">&quot;nose_z&quot;</span><span class="p">,</span> <span class="s2">&quot;Nose&quot;</span><span class="p">,</span> <span class="n">colors</span><span class="p">)</span>
+# produces a simple plot of `com_xyz` time series of nose
+plotXYZOverTime(&quot;nose_x&quot;, &quot;nose_y&quot;, &quot;nose_z&quot;, &quot;Nose&quot;, colors)
+
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">right_toe_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_x&quot;</span><span class="p">]</span>
-<span class="n">right_toe_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_y&quot;</span><span class="p">]</span>
-<span class="n">right_toe_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_z&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>right_toe_x = skeleton_dataframe[&quot;right_foot_index_x&quot;]
+right_toe_y = skeleton_dataframe[&quot;right_foot_index_y&quot;]
+right_toe_z = skeleton_dataframe[&quot;right_foot_index_z&quot;]
 
-<span class="n">right_heel_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_x&quot;</span><span class="p">]</span>
-<span class="n">right_heel_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_y&quot;</span><span class="p">]</span>
-<span class="n">right_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_z&quot;</span><span class="p">]</span>
+right_heel_x = skeleton_dataframe[&quot;right_heel_x&quot;]
+right_heel_y = skeleton_dataframe[&quot;right_heel_y&quot;]
+right_heel_z = skeleton_dataframe[&quot;right_heel_z&quot;]
 
 
-<span class="n">cx</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">2500</span><span class="p">,</span><span class="mi">3500</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">cy</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">2500</span><span class="p">,</span><span class="mi">3500</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
+cx = com_xyz[np.arange(2500,3500),0]
+cy = com_xyz[np.arange(2500,3500),1]
+
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Change the frame numbers for an area of interest</span>
-<span class="n">startFrame</span> <span class="o">=</span> <span class="mi">2500</span>
-<span class="n">endFrame</span> <span class="o">=</span> <span class="mi">3500</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>#Change the frame numbers for an area of interest
+startFrame = 2500
+endFrame = 3500
 
 
-<span class="n">fig2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
+fig2 = plt.Figure()
 
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="n">startFrame</span><span class="p">:</span><span class="n">endFrame</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="n">startFrame</span><span class="p">:</span><span class="n">endFrame</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="n">startFrame</span><span class="p">:</span><span class="n">endFrame</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="n">startFrame</span><span class="p">:</span><span class="n">endFrame</span><span class="p">],</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cx</span><span class="p">,</span> <span class="n">cy</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Foot Position vs. Center of Mass While Standing on One Foot&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;X Position&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Y Position&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;Right Toe&quot;</span><span class="p">,</span> <span class="s2">&quot;Right Heel&quot;</span><span class="p">,</span> <span class="s2">&quot;Center Of Mass&quot;</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+plt.plot(right_toe_x[startFrame:endFrame], right_toe_y[startFrame:endFrame], &#39;r&#39;)
+plt.plot(right_heel_x[startFrame:endFrame], right_heel_y[startFrame:endFrame], &#39;b&#39;)
+plt.plot(cx, cy, &#39;g&#39;)
+plt.title(&quot;Foot Position vs. Center of Mass While Standing on One Foot&quot;)
+plt.xlabel(&quot;X Position&quot;)
+plt.ylabel(&quot;Y Position&quot;)
+plt.legend([&quot;Right Toe&quot;, &quot;Right Heel&quot;, &quot;Center Of Mass&quot;])
+plt.show()
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#This function creates two subplots with the first showing location of foot vs cetner of mass while holding a weight, second without holding weight</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>#This function creates two subplots with the first showing location of foot vs cetner of mass while holding a weight, second without holding weight
 
-<span class="k">def</span> <span class="nf">plotWithandWithoutWeight</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span> <span class="n">endFrameNoWeight</span><span class="p">,</span> <span class="n">startFrameWithWeight</span><span class="p">,</span> <span class="n">endFrameWithWeight</span><span class="p">,</span> <span class="n">onefoot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">foot</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">):</span>
-    <span class="c1">#extract the data from the data frame</span>
-    <span class="n">right_toe_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_x&quot;</span><span class="p">]</span>
-    <span class="n">right_toe_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_y&quot;</span><span class="p">]</span>
-    <span class="n">right_toe_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_z&quot;</span><span class="p">]</span>
+def plotWithandWithoutWeight(startFrameNoWeight, endFrameNoWeight, startFrameWithWeight, endFrameWithWeight, onefoot=True, foot=&quot;right&quot;):
+    #extract the data from the data frame
+    right_toe_x = skeleton_dataframe[&quot;right_foot_index_x&quot;]
+    right_toe_y = skeleton_dataframe[&quot;right_foot_index_y&quot;]
+    right_toe_z = skeleton_dataframe[&quot;right_foot_index_z&quot;]
 
-    <span class="n">right_heel_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_x&quot;</span><span class="p">]</span>
-    <span class="n">right_heel_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_y&quot;</span><span class="p">]</span>
-    <span class="n">right_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_z&quot;</span><span class="p">]</span>
+    right_heel_x = skeleton_dataframe[&quot;right_heel_x&quot;]
+    right_heel_y = skeleton_dataframe[&quot;right_heel_y&quot;]
+    right_heel_z = skeleton_dataframe[&quot;right_heel_z&quot;]
 
-    <span class="n">left_toe_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_x&quot;</span><span class="p">]</span>
-    <span class="n">left_toe_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_y&quot;</span><span class="p">]</span>
-    <span class="n">left_toe_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_z&quot;</span><span class="p">]</span>
+    left_toe_x = skeleton_dataframe[&quot;left_foot_index_x&quot;]
+    left_toe_y = skeleton_dataframe[&quot;left_foot_index_y&quot;]
+    left_toe_z = skeleton_dataframe[&quot;left_foot_index_z&quot;]
 
-    <span class="n">left_heel_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_x&quot;</span><span class="p">]</span>
-    <span class="n">left_heel_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_y&quot;</span><span class="p">]</span>
-    <span class="n">left_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_z&quot;</span><span class="p">]</span>
+    left_heel_x = skeleton_dataframe[&quot;left_heel_x&quot;]
+    left_heel_y = skeleton_dataframe[&quot;left_heel_y&quot;]
+    left_heel_z = skeleton_dataframe[&quot;left_heel_z&quot;]
 
-    <span class="n">cxWeight</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameWithWeight</span><span class="p">,</span><span class="n">endFrameWithWeight</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">cyWeight</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameWithWeight</span><span class="p">,</span><span class="n">endFrameWithWeight</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
+    cxWeight = com_xyz[np.arange(startFrameWithWeight,endFrameWithWeight),0]
+    cyWeight = com_xyz[np.arange(startFrameWithWeight,endFrameWithWeight),1]
     
-    <span class="n">cxNoWeight</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span><span class="n">endFrameNoWeight</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">cyNoWeight</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span><span class="n">endFrameNoWeight</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
+    cxNoWeight = com_xyz[np.arange(startFrameNoWeight,endFrameNoWeight),0]
+    cyNoWeight = com_xyz[np.arange(startFrameNoWeight,endFrameNoWeight),1]
 
 
-    <span class="c1">#Create the plots</span>
-    <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Foot Postition vs. Center of Mass&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+    #Create the plots
+    fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, constrained_layout=True)
+    fig.suptitle(&#39;Foot Postition vs. Center of Mass&#39;, fontsize=16)
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">onefoot</span><span class="o">==</span><span class="kc">False</span> <span class="ow">or</span> <span class="p">(</span><span class="n">onefoot</span> <span class="ow">and</span> <span class="n">foot</span><span class="o">==</span><span class="s2">&quot;right&quot;</span><span class="p">)):</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
-        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
+    if (onefoot==False or (onefoot and foot==&quot;right&quot;)):
+        ax2.plot(right_toe_x[startFrameWithWeight:endFrameWithWeight], right_toe_y[startFrameWithWeight:endFrameWithWeight], &#39;r&#39;)
+        ax2.plot(right_heel_x[startFrameWithWeight:endFrameWithWeight], right_heel_y[startFrameWithWeight:endFrameWithWeight], &#39;b&#39;)
+        ax1.plot(right_toe_x[startFrameNoWeight:endFrameNoWeight], right_toe_y[startFrameNoWeight:endFrameNoWeight], &#39;r&#39;)
+        ax1.plot(right_heel_x[startFrameNoWeight:endFrameNoWeight], right_heel_y[startFrameNoWeight:endFrameNoWeight], &#39;b&#39;)
     
-    <span class="k">if</span> <span class="p">(</span><span class="n">onefoot</span><span class="o">==</span><span class="kc">False</span> <span class="ow">or</span> <span class="p">(</span><span class="n">onefoot</span> <span class="ow">and</span> <span class="n">foot</span><span class="o">==</span><span class="s2">&quot;left&quot;</span><span class="p">)):</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_toe_x</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="n">left_toe_y</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="s1">&#39;orange&#39;</span><span class="p">)</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_heel_x</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="n">left_heel_y</span><span class="p">[</span><span class="n">startFrameWithWeight</span><span class="p">:</span><span class="n">endFrameWithWeight</span><span class="p">],</span> <span class="s1">&#39;purple&#39;</span><span class="p">)</span>
-        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_toe_x</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="n">left_toe_y</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="s1">&#39;orange&#39;</span><span class="p">)</span>
-        <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_heel_x</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="n">left_heel_y</span><span class="p">[</span><span class="n">startFrameNoWeight</span><span class="p">:</span><span class="n">endFrameNoWeight</span><span class="p">],</span> <span class="s1">&#39;purple&#39;</span><span class="p">)</span>
+    if (onefoot==False or (onefoot and foot==&quot;left&quot;)):
+        ax2.plot(left_toe_x[startFrameWithWeight:endFrameWithWeight], left_toe_y[startFrameWithWeight:endFrameWithWeight], &#39;orange&#39;)
+        ax2.plot(left_heel_x[startFrameWithWeight:endFrameWithWeight], left_heel_y[startFrameWithWeight:endFrameWithWeight], &#39;purple&#39;)
+        ax1.plot(left_toe_x[startFrameNoWeight:endFrameNoWeight], left_toe_y[startFrameNoWeight:endFrameNoWeight], &#39;orange&#39;)
+        ax1.plot(left_heel_x[startFrameNoWeight:endFrameNoWeight], left_heel_y[startFrameNoWeight:endFrameNoWeight], &#39;purple&#39;)
     
-    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cxNoWeight</span><span class="p">,</span> <span class="n">cyNoWeight</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">)</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cxWeight</span><span class="p">,</span> <span class="n">cyWeight</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">)</span>
+    ax1.plot(cxNoWeight, cyNoWeight, &#39;g&#39;)
+    ax2.plot(cxWeight, cyWeight, &#39;g&#39;)
 
-    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;With Weight&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Without Weight&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    ax2.set_title(&#39;With Weight&#39;, fontsize=14)
+    ax1.set_title(&quot;Without Weight&quot;, fontsize=14)
 
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;X Position&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y Position&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;X Position&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">)</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">)</span>
+    ax1.set_xlabel(xlabel=&#39;X Position&#39;, fontsize=12)
+    ax1.set_ylabel(&#39;Y Position&#39;, fontsize=12)
+    ax2.set_xlabel(&quot;X Position&quot;, fontsize=12)
+    ax1.set_aspect(&quot;equal&quot;)
+    ax2.set_aspect(&quot;equal&quot;)
 
-    <span class="k">if</span><span class="p">(</span><span class="n">onefoot</span><span class="p">):</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;Toe&quot;</span><span class="p">,</span> <span class="s2">&quot;Heel&quot;</span><span class="p">,</span> <span class="s2">&quot;Center Of Mass&quot;</span><span class="p">])</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;Left Toe&quot;</span><span class="p">,</span> <span class="s2">&quot;Left Heel&quot;</span><span class="p">,</span> <span class="s2">&quot;Right Toe&quot;</span><span class="p">,</span> <span class="s2">&quot;Right Heel&quot;</span><span class="p">,</span> <span class="s2">&quot;Center Of Mass&quot;</span><span class="p">])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    if(onefoot):
+        plt.legend([&quot;Toe&quot;, &quot;Heel&quot;, &quot;Center Of Mass&quot;])
+    else:
+        plt.legend([&quot;Left Toe&quot;, &quot;Left Heel&quot;, &quot;Right Toe&quot;, &quot;Right Heel&quot;, &quot;Center Of Mass&quot;])
+    plt.show()
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change these to the desired frame numbers for when participants are standing on right foot with/without weight</span>
-<span class="n">startFrameWithWeight</span> <span class="o">=</span> <span class="mi">2500</span>
-<span class="n">endFrameWithWeight</span> <span class="o">=</span> <span class="mi">3500</span>
-<span class="n">startFrameNoWeight</span> <span class="o">=</span> <span class="mi">2500</span>
-<span class="n">endFrameNoWeight</span> <span class="o">=</span> <span class="mi">3500</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Change these to the desired frame numbers for when participants are standing on right foot with/without weight
+startFrameWithWeight = 2500
+endFrameWithWeight = 3500
+startFrameNoWeight = 2500
+endFrameNoWeight = 3500
 
 
-<span class="c1"># Plot weight vs no weight right foot</span>
-<span class="n">plotWithandWithoutWeight</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span> <span class="n">endFrameNoWeight</span><span class="p">,</span> <span class="n">startFrameWithWeight</span><span class="p">,</span> <span class="n">endFrameWithWeight</span><span class="p">,</span> <span class="n">onefoot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">foot</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+# Plot weight vs no weight right foot
+plotWithandWithoutWeight(startFrameNoWeight, endFrameNoWeight, startFrameWithWeight, endFrameWithWeight, onefoot=True, foot=&quot;right&quot;)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change these to the desired frame numbers for when participants are standing on left foot with/without weight</span>
-<span class="n">startFrameWithWeight</span> <span class="o">=</span> <span class="mi">2500</span>
-<span class="n">endFrameWithWeight</span> <span class="o">=</span> <span class="mi">3500</span>
-<span class="n">startFrameNoWeight</span> <span class="o">=</span> <span class="mi">2500</span>
-<span class="n">endFrameNoWeight</span> <span class="o">=</span> <span class="mi">3500</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Change these to the desired frame numbers for when participants are standing on left foot with/without weight
+startFrameWithWeight = 2500
+endFrameWithWeight = 3500
+startFrameNoWeight = 2500
+endFrameNoWeight = 3500
 
-<span class="c1">#Plot weight vs no weight left foot</span>
-<span class="n">plotWithandWithoutWeight</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span> <span class="n">endFrameNoWeight</span><span class="p">,</span> <span class="n">startFrameWithWeight</span><span class="p">,</span> <span class="n">endFrameWithWeight</span><span class="p">,</span> <span class="n">onefoot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">foot</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+#Plot weight vs no weight left foot
+plotWithandWithoutWeight(startFrameNoWeight, endFrameNoWeight, startFrameWithWeight, endFrameWithWeight, onefoot=True, foot=&quot;left&quot;)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change these to the desired frame numbers for when participants are standing on both feet with/without weight</span>
-<span class="n">startFrameWithWeight</span> <span class="o">=</span> <span class="mi">2500</span>
-<span class="n">endFrameWithWeight</span> <span class="o">=</span> <span class="mi">3500</span>
-<span class="n">startFrameNoWeight</span> <span class="o">=</span> <span class="mi">2500</span>
-<span class="n">endFrameNoWeight</span> <span class="o">=</span> <span class="mi">3500</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Change these to the desired frame numbers for when participants are standing on both feet with/without weight
+startFrameWithWeight = 2500
+endFrameWithWeight = 3500
+startFrameNoWeight = 2500
+endFrameNoWeight = 3500
 
-<span class="c1">#Plot weight vs no weight both</span>
-<span class="n">plotWithandWithoutWeight</span><span class="p">(</span><span class="n">startFrameNoWeight</span><span class="p">,</span> <span class="n">endFrameNoWeight</span><span class="p">,</span> <span class="n">startFrameWithWeight</span><span class="p">,</span> <span class="n">endFrameWithWeight</span><span class="p">,</span> <span class="n">onefoot</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+#Plot weight vs no weight both
+plotWithandWithoutWeight(startFrameNoWeight, endFrameNoWeight, startFrameWithWeight, endFrameWithWeight, onefoot=False)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#This function creates two subplots with the first showing location of foot vs cetner of mass while holding a weight, second without holding weight</span>
-<span class="k">def</span> <span class="nf">plotOneVsTwoFeet</span><span class="p">(</span><span class="n">startFrameOneFoot</span><span class="p">,</span> <span class="n">endFrameOneFoot</span><span class="p">,</span> <span class="n">startFrameTwoFeet</span><span class="p">,</span> <span class="n">endFrameTwoFeet</span><span class="p">,</span> <span class="n">colors</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="c1">#extract the data from the data frame</span>
-    <span class="n">right_toe_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_x&quot;</span><span class="p">]</span>
-    <span class="n">right_toe_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_y&quot;</span><span class="p">]</span>
-    <span class="n">right_toe_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_z&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>#This function creates two subplots with the first showing location of foot vs cetner of mass while holding a weight, second without holding weight
+def plotOneVsTwoFeet(startFrameOneFoot, endFrameOneFoot, startFrameTwoFeet, endFrameTwoFeet, colors, weight=False):
+    #extract the data from the data frame
+    right_toe_x = skeleton_dataframe[&quot;right_foot_index_x&quot;]
+    right_toe_y = skeleton_dataframe[&quot;right_foot_index_y&quot;]
+    right_toe_z = skeleton_dataframe[&quot;right_foot_index_z&quot;]
 
-    <span class="n">right_heel_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_x&quot;</span><span class="p">]</span>
-    <span class="n">right_heel_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_y&quot;</span><span class="p">]</span>
-    <span class="n">right_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_z&quot;</span><span class="p">]</span>
+    right_heel_x = skeleton_dataframe[&quot;right_heel_x&quot;]
+    right_heel_y = skeleton_dataframe[&quot;right_heel_y&quot;]
+    right_heel_z = skeleton_dataframe[&quot;right_heel_z&quot;]
 
-    <span class="n">left_toe_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_x&quot;</span><span class="p">]</span>
-    <span class="n">left_toe_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_y&quot;</span><span class="p">]</span>
-    <span class="n">left_toe_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_foot_index_z&quot;</span><span class="p">]</span>
+    left_toe_x = skeleton_dataframe[&quot;left_foot_index_x&quot;]
+    left_toe_y = skeleton_dataframe[&quot;left_foot_index_y&quot;]
+    left_toe_z = skeleton_dataframe[&quot;left_foot_index_z&quot;]
 
-    <span class="n">left_heel_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_x&quot;</span><span class="p">]</span>
-    <span class="n">left_heel_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_y&quot;</span><span class="p">]</span>
-    <span class="n">left_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;left_heel_z&quot;</span><span class="p">]</span>
+    left_heel_x = skeleton_dataframe[&quot;left_heel_x&quot;]
+    left_heel_y = skeleton_dataframe[&quot;left_heel_y&quot;]
+    left_heel_z = skeleton_dataframe[&quot;left_heel_z&quot;]
 
-    <span class="n">cxTwoFeet</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameOneFoot</span><span class="p">,</span><span class="n">endFrameOneFoot</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">cyTwoFeet</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameOneFoot</span><span class="p">,</span><span class="n">endFrameOneFoot</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
+    cxTwoFeet = com_xyz[np.arange(startFrameOneFoot,endFrameOneFoot),0]
+    cyTwoFeet = com_xyz[np.arange(startFrameOneFoot,endFrameOneFoot),1]
     
-    <span class="n">cxOneFoot</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameTwoFeet</span><span class="p">,</span><span class="n">endFrameTwoFeet</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">cyOneFoot</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">startFrameTwoFeet</span><span class="p">,</span><span class="n">endFrameTwoFeet</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
+    cxOneFoot = com_xyz[np.arange(startFrameTwoFeet,endFrameTwoFeet),0]
+    cyOneFoot = com_xyz[np.arange(startFrameTwoFeet,endFrameTwoFeet),1]
 
 
-    <span class="c1">#Create the plots</span>
-    <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Foot Position vs. Center of Mass&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+    #Create the plots
+    fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, constrained_layout=True)
+    fig.suptitle(&#39;Foot Position vs. Center of Mass&#39;, fontsize=16)
 
-    <span class="c1">#Plot one foot</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="n">startFrameOneFoot</span><span class="p">:</span><span class="n">endFrameOneFoot</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="n">startFrameOneFoot</span><span class="p">:</span><span class="n">endFrameOneFoot</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="n">startFrameOneFoot</span><span class="p">:</span><span class="n">endFrameOneFoot</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="n">startFrameOneFoot</span><span class="p">:</span><span class="n">endFrameOneFoot</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cxOneFoot</span><span class="p">,</span> <span class="n">cyOneFoot</span><span class="p">,</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    #Plot one foot
+    ax1.plot(right_toe_x[startFrameOneFoot:endFrameOneFoot], right_toe_y[startFrameOneFoot:endFrameOneFoot], colors[1])
+    ax1.plot(right_heel_x[startFrameOneFoot:endFrameOneFoot], right_heel_y[startFrameOneFoot:endFrameOneFoot], colors[2])
+    ax1.plot(cxOneFoot, cyOneFoot, colors[0])
     
-    <span class="c1">#Plot both feet</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_toe_x</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">left_toe_y</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">left_heel_x</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">left_heel_y</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cxTwoFeet</span><span class="p">,</span> <span class="n">cyTwoFeet</span><span class="p">,</span> <span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="n">startFrameTwoFeet</span><span class="p">:</span><span class="n">endFrameTwoFeet</span><span class="p">],</span> <span class="n">colors</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+    #Plot both feet
+    ax2.plot(left_toe_x[startFrameTwoFeet:endFrameTwoFeet], left_toe_y[startFrameTwoFeet:endFrameTwoFeet], colors[1])
+    ax2.plot(left_heel_x[startFrameTwoFeet:endFrameTwoFeet], left_heel_y[startFrameTwoFeet:endFrameTwoFeet], colors[2])
+    ax2.plot(cxTwoFeet, cyTwoFeet, colors[0])
+    ax2.plot(right_toe_x[startFrameTwoFeet:endFrameTwoFeet], right_toe_y[startFrameTwoFeet:endFrameTwoFeet], colors[1])
+    ax2.plot(right_heel_x[startFrameTwoFeet:endFrameTwoFeet], right_heel_y[startFrameTwoFeet:endFrameTwoFeet], colors[2])
    
 
 
-    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Both Feet&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;One Foot&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    ax2.set_title(&#39;Both Feet&#39;, fontsize=14)
+    ax1.set_title(&quot;One Foot&quot;, fontsize=14)
 
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;X Position&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y Position&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;X Position&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    ax1.set_xlabel(xlabel=&#39;X Position&#39;, fontsize=12)
+    ax1.set_ylabel(&#39;Y Position&#39;, fontsize=12)
+    ax2.set_xlabel(&quot;X Position&quot;, fontsize=12)
 
 
-    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;Toe&quot;</span><span class="p">,</span> <span class="s2">&quot;Heel&quot;</span><span class="p">,</span> <span class="s2">&quot;Center Of Mass&quot;</span><span class="p">])</span>
+    plt.legend([&quot;Toe&quot;, &quot;Heel&quot;, &quot;Center Of Mass&quot;])
  
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    plt.show()
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plots one vs two feet (can also use this to plot one vs two feet while holding a weight, just change the start frames accordingly)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Plots one vs two feet (can also use this to plot one vs two feet while holding a weight, just change the start frames accordingly)
 
-<span class="n">startFrameOneFoot</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">endFrameOneFoot</span> <span class="o">=</span> <span class="mi">1000</span>
-<span class="n">startFrameTwoFeet</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">endFrameTwoFeet</span><span class="o">=</span> <span class="mi">1000</span>
+startFrameOneFoot = 0
+endFrameOneFoot = 1000
+startFrameTwoFeet = 0
+endFrameTwoFeet= 1000
 
-<span class="c1">#Change colors if desired</span>
-<span class="n">colors</span><span class="o">=</span> <span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">]</span>
+#Change colors if desired
+colors= [&quot;red&quot;, &quot;orange&quot;, &quot;blue&quot;]
 
-<span class="n">plotOneVsTwoFeet</span><span class="p">(</span><span class="n">startFrameOneFoot</span><span class="p">,</span> <span class="n">endFrameOneFoot</span><span class="p">,</span> <span class="n">startFrameTwoFeet</span><span class="p">,</span> <span class="n">endFrameTwoFeet</span><span class="p">,</span> <span class="n">colors</span><span class="p">)</span>
+plotOneVsTwoFeet(startFrameOneFoot, endFrameOneFoot, startFrameTwoFeet, endFrameTwoFeet, colors)
 </pre></div>
 </div>
 </div>

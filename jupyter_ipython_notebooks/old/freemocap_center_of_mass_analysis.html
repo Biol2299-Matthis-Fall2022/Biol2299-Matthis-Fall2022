@@ -187,6 +187,11 @@ const thebe_selector_output = ".output, .cell_output"
      2022-11-02
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class_day_notes/2022-11-28.html">
+     2022-11-28
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -656,42 +661,24 @@ title="Print to PDF"
 <h2>Install (using <code class="docutils literal notranslate"><span class="pre">pip</span></code> and then import the python packages we’ll need)<a class="headerlink" href="#install-using-pip-and-then-import-the-python-packages-we-ll-need" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install numpy --quiet
-<span class="o">!</span>pip install pandas --quiet
-<span class="o">!</span>pip install matplotlib --quiet
-<span class="o">!</span>pip install rich --quiet
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip available: <span class=" -Color -Color-Red">22.3</span> -&gt; <span class=" -Color -Color-Green">22.3.1</span>
-<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip available: <span class=" -Color -Color-Red">22.3</span> -&gt; <span class=" -Color -Color-Green">22.3.1</span>
-<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip available: <span class=" -Color -Color-Red">22.3</span> -&gt; <span class=" -Color -Color-Green">22.3.1</span>
-<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip available: <span class=" -Color -Color-Red">22.3</span> -&gt; <span class=" -Color -Color-Green">22.3.1</span>
-<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>!pip install numpy --quiet
+!pip install pandas --quiet
+!pip install matplotlib --quiet
+!pip install rich --quiet
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="c1"># matplotlib.use(&quot;qt5agg&quot;)</span>
-<span class="c1"># %matplotlib inline</span>
-<span class="c1"># plt.style.use(&#39;classic&#39;)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import numpy as np
+import pandas as pd
+import matplotlib
+import matplotlib.pyplot as plt
+from pathlib import Path
+# matplotlib.use(&quot;qt5agg&quot;)
+# %matplotlib inline
+# plt.style.use(&#39;classic&#39;)
 </pre></div>
 </div>
 </div>
@@ -701,15 +688,15 @@ title="Print to PDF"
 <h2>Step 0 - Connect to the Google Drive where the data is stored<a class="headerlink" href="#step-0-connect-to-the-google-drive-where-the-data-is-stored" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
-<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from google.colab import drive
+drive.mount(&#39;/content/drive&#39;)
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
 
@@ -731,151 +718,151 @@ title="Print to PDF"
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># path to the full data folder</span>
-<span class="n">freemocap_data_folder_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;/content/drive/MyDrive/Biol2299_Fall2022/com_vs_bos_standing_data&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># path to the full data folder
+freemocap_data_folder_path = Path(r&quot;/content/drive/MyDrive/Biol2299_Fall2022/com_vs_bos_standing_data&quot;)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># choose which subject (session folder) we are going to look at</span>
-<span class="n">session_id</span> <span class="o">=</span> <span class="s2">&quot;sesh_2022-09-28_15_45_39&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># choose which subject (session folder) we are going to look at
+session_id = &quot;sesh_2022-09-28_15_45_39&quot;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># build the paths to the specific subfolders we care about</span>
-<span class="n">session_folder_path</span> <span class="o">=</span> <span class="n">freemocap_data_folder_path</span> <span class="o">/</span> <span class="n">session_id</span>
-<span class="n">data_arrays_path</span> <span class="o">=</span> <span class="n">session_folder_path</span><span class="o">/</span><span class="s1">&#39;DataArrays&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># build the paths to the specific subfolders we care about
+session_folder_path = freemocap_data_folder_path / session_id
+data_arrays_path = session_folder_path/&#39;DataArrays&#39;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># manually create &#39;session specific info&#39; dictionary</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># manually create &#39;session specific info&#39; dictionary
 
-<span class="n">session_specific_information_dictionary</span> <span class="o">=</span>     <span class="p">{</span>
-    <span class="n">session_id</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;no_weight&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;right_foot&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="s2">&quot;start_frame&quot;</span><span class="p">:</span> <span class="mi">2500</span><span class="p">,</span>
-             <span class="s2">&quot;end_frame&quot;</span><span class="p">:</span> <span class="mi">3500</span>
-<span class="p">}</span>
-<span class="p">}</span>
-<span class="p">}</span>
-<span class="p">}</span>
+session_specific_information_dictionary =     {
+    session_id: {
+    &quot;no_weight&quot;: {
+        &quot;right_foot&quot;: {
+            &quot;start_frame&quot;: 2500,
+             &quot;end_frame&quot;: 3500
+}
+}
+}
+}
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Specific file paths</span>
-<span class="n">com_xyz_npy_path</span> <span class="o">=</span> <span class="n">data_arrays_path</span> <span class="o">/</span> <span class="s2">&quot;totalBodyCOM_frame_XYZ.npy&quot;</span>
-<span class="n">skeleton_body_dots_csv_path</span> <span class="o">=</span> <span class="n">data_arrays_path</span> <span class="o">/</span> <span class="s2">&quot;mediapipe_body_3d_xyz.csv&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>#Specific file paths
+com_xyz_npy_path = data_arrays_path / &quot;totalBodyCOM_frame_XYZ.npy&quot;
+skeleton_body_dots_csv_path = data_arrays_path / &quot;mediapipe_body_3d_xyz.csv&quot;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load the data in</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># load the data in
 
-<span class="n">com_xyz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">com_xyz_npy_path</span><span class="p">)</span>
-<span class="n">skeleton_dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">skeleton_body_dots_csv_path</span><span class="p">)</span>
+com_xyz = np.load(com_xyz_npy_path)
+skeleton_dataframe = pd.read_csv(skeleton_body_dots_csv_path)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pull out the data from the `nose` marker</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># pull out the data from the `nose` marker
 
-<span class="n">nose_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_x&quot;</span><span class="p">]</span>
-<span class="n">nose_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_y&quot;</span><span class="p">]</span>
-<span class="n">nose_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_z&quot;</span><span class="p">]</span>
+nose_x = skeleton_dataframe[&quot;nose_x&quot;]
+nose_y = skeleton_dataframe[&quot;nose_y&quot;]
+nose_z = skeleton_dataframe[&quot;nose_z&quot;]
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;nose_x.shape: </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> (that means that there were </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> recorded frames &quot;</span><span class="p">)</span> <span class="c1">#make sure the data is the shape we expect </span>
+print(f&quot;nose_x.shape: {nose_x.shape} (that means that there were {nose_x.shape} recorded frames &quot;) #make sure the data is the shape we expect 
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># simple plot of `nose_x, y, and z` time series</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># simple plot of `nose_x, y, and z` time series
 
-<span class="o">%</span><span class="k">matplotlib</span> inline
+%matplotlib inline
 
-<span class="n">fig1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-<span class="n">fig1</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Nose Timeseries&quot;</span><span class="p">)</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_x</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_y</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_z</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+fig1 = plt.Figure()
+fig1.suptitle(&quot;Nose Timeseries&quot;)
+ax = fig1.add_subplot()
+ax.plot(nose_x)
+ax.plot(nose_y)
+ax.plot(nose_z)
+plt.show()
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># build the paths to the specific subfolders we care about</span>
-<span class="n">session_folder_path</span> <span class="o">=</span> <span class="n">freemocap_data_folder_path</span> <span class="o">/</span> <span class="n">session_id</span>
-<span class="n">data_arrays_path</span> <span class="o">=</span> <span class="n">session_folder_path</span><span class="o">/</span><span class="s1">&#39;DataArrays&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># build the paths to the specific subfolders we care about
+session_folder_path = freemocap_data_folder_path / session_id
+data_arrays_path = session_folder_path/&#39;DataArrays&#39;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># manually create &#39;session specific info&#39; dictionary</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># manually create &#39;session specific info&#39; dictionary
 
-<span class="n">session_specific_information_dictionary</span> <span class="o">=</span>     <span class="p">{</span>
-    <span class="n">session_id</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;no_weight&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;right_foot&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="s2">&quot;start_frame&quot;</span><span class="p">:</span> <span class="mi">2500</span><span class="p">,</span>
-             <span class="s2">&quot;end_frame&quot;</span><span class="p">:</span> <span class="mi">3500</span>
-<span class="p">}</span>
-<span class="p">}</span>
-<span class="p">}</span>
-<span class="p">}</span>
+session_specific_information_dictionary =     {
+    session_id: {
+    &quot;no_weight&quot;: {
+        &quot;right_foot&quot;: {
+            &quot;start_frame&quot;: 2500,
+             &quot;end_frame&quot;: 3500
+}
+}
+}
+}
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Specific file paths</span>
-<span class="n">com_xyz_npy_path</span> <span class="o">=</span> <span class="n">data_arrays_path</span> <span class="o">/</span> <span class="s2">&quot;totalBodyCOM_frame_XYZ.npy&quot;</span>
-<span class="n">skeleton_body_dots_csv_path</span> <span class="o">=</span> <span class="n">data_arrays_path</span> <span class="o">/</span> <span class="s2">&quot;mediapipe_body_3d_xyz.csv&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>#Specific file paths
+com_xyz_npy_path = data_arrays_path / &quot;totalBodyCOM_frame_XYZ.npy&quot;
+skeleton_body_dots_csv_path = data_arrays_path / &quot;mediapipe_body_3d_xyz.csv&quot;
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load the data in</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># load the data in
 
-<span class="n">com_xyz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">com_xyz_npy_path</span><span class="p">)</span>
-<span class="n">skeleton_dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">skeleton_body_dots_csv_path</span><span class="p">)</span>
+com_xyz = np.load(com_xyz_npy_path)
+skeleton_dataframe = pd.read_csv(skeleton_body_dots_csv_path)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pull out the data from the `nose` marker</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># pull out the data from the `nose` marker
 
-<span class="n">nose_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_x&quot;</span><span class="p">]</span>
-<span class="n">nose_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_y&quot;</span><span class="p">]</span>
-<span class="n">nose_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;nose_z&quot;</span><span class="p">]</span>
+nose_x = skeleton_dataframe[&quot;nose_x&quot;]
+nose_y = skeleton_dataframe[&quot;nose_y&quot;]
+nose_z = skeleton_dataframe[&quot;nose_z&quot;]
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;nose_x.shape: </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> (that means that there were </span><span class="si">{</span><span class="n">nose_x</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> recorded frames &quot;</span><span class="p">)</span> <span class="c1">#make sure the data is the shape we expect </span>
+print(f&quot;nose_x.shape: {nose_x.shape} (that means that there were {nose_x.shape} recorded frames &quot;) #make sure the data is the shape we expect 
 </pre></div>
 </div>
 </div>
@@ -887,50 +874,50 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># simple plot of `nose_x, y, and z` time series</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># simple plot of `nose_x, y, and z` time series
 
-<span class="o">%</span><span class="k">matplotlib</span> inline
+%matplotlib inline
 
-<span class="n">fig1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-<span class="n">fig1</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Nose Timeseries&quot;</span><span class="p">)</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig1</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">()</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_x</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_y</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_z</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+fig1 = plt.Figure()
+fig1.suptitle(&quot;Nose Timeseries&quot;)
+ax = fig1.add_subplot()
+ax.plot(nose_x)
+ax.plot(nose_y)
+ax.plot(nose_z)
+plt.show()
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">right_toe_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_x&quot;</span><span class="p">]</span>
-<span class="n">right_toe_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_y&quot;</span><span class="p">]</span>
-<span class="n">right_toe_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_foot_index_z&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>right_toe_x = skeleton_dataframe[&quot;right_foot_index_x&quot;]
+right_toe_y = skeleton_dataframe[&quot;right_foot_index_y&quot;]
+right_toe_z = skeleton_dataframe[&quot;right_foot_index_z&quot;]
 
-<span class="n">right_heel_x</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_x&quot;</span><span class="p">]</span>
-<span class="n">right_heel_y</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_y&quot;</span><span class="p">]</span>
-<span class="n">right_heel_z</span> <span class="o">=</span> <span class="n">skeleton_dataframe</span><span class="p">[</span><span class="s2">&quot;right_heel_z&quot;</span><span class="p">]</span>
+right_heel_x = skeleton_dataframe[&quot;right_heel_x&quot;]
+right_heel_y = skeleton_dataframe[&quot;right_heel_y&quot;]
+right_heel_z = skeleton_dataframe[&quot;right_heel_z&quot;]
 
 
 
-<span class="n">cx</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">2500</span><span class="p">,</span><span class="mi">3500</span><span class="p">),</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">cy</span> <span class="o">=</span> <span class="n">com_xyz</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">2500</span><span class="p">,</span><span class="mi">3500</span><span class="p">),</span><span class="mi">1</span><span class="p">]</span>
+cx = com_xyz[np.arange(2500,3500),0]
+cy = com_xyz[np.arange(2500,3500),1]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
-<span class="c1"># ax = fig2.add_subplot()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>fig2 = plt.Figure()
+# ax = fig2.add_subplot()
 
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_toe_x</span><span class="p">[</span><span class="mi">2500</span><span class="p">:</span><span class="mi">3500</span><span class="p">],</span> <span class="n">right_toe_y</span><span class="p">[</span><span class="mi">2500</span><span class="p">:</span><span class="mi">3500</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_heel_x</span><span class="p">[</span><span class="mi">2500</span><span class="p">:</span><span class="mi">3500</span><span class="p">],</span> <span class="n">right_heel_y</span><span class="p">[</span><span class="mi">2500</span><span class="p">:</span><span class="mi">3500</span><span class="p">],</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
+plt.plot(right_toe_x[2500:3500], right_toe_y[2500:3500], &#39;r&#39;)
+plt.plot(right_heel_x[2500:3500], right_heel_y[2500:3500], &#39;b&#39;)
 
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cx</span><span class="p">,</span> <span class="n">cy</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">)</span>
+plt.plot(cx, cy, &#39;g&#39;)
 
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+plt.show()
 </pre></div>
 </div>
 </div>
